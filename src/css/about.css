@@ -1,0 +1,103 @@
+.box {
+  height: 50px;
+}
+/* Public */
+.main {
+  margin-top: 150px;
+}
+/* Public END */
+/* Brand Story */
+.AboutTitle::before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  width: 40px;
+  height: 2px;
+  background-color: #222;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+}
+.AboutTitle {
+  position: relative;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 35px;
+  color: #222;
+}
+.AboutBrandStory {
+  text-align: left;
+  margin-top: 25px;
+  padding-left: 35px;
+  font-weight: 700;
+}
+.AboutBanner {
+  width: 80%;
+  padding-top: 20%;
+}
+.BrandStory {
+  margin-top: 50px;
+  text-align: left;
+}
+.BrandStorytext {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.BrandStorydetail {
+  font-size: 13px;
+}
+.video-banner-left {
+  width: 100%;
+  float: left;
+}
+.video-banner-right {
+  width: 100%;
+  margin-left: 10px;
+  float: right;
+}
+/* animated  */
+.BrandStory {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Brand Story END */
+
+/* Our Mission */
+.koeuromallLink {
+  margin-left: 50px;
+  font-size: 14px;
+}
+.video-box {
+  outline: none;
+  border: none;
+  width: 95%;
+  height: auto;
+}
+.img_box {
+  margin-top: 50px;
+  width: 70px;
+}
+.brand-card {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+  transform: translateX(-100%);
+}
+
+.slide-start {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Our Mission END */
+
+/* OurValue */
+.space {
+  margin-top: 10%;
+}
+/* OurValue END */

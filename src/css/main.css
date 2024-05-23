@@ -1,0 +1,568 @@
+body {
+  user-select: none;
+}
+img {
+  pointer-events: none;
+}
+ul {
+  list-style: none;
+}
+
+.title,
+.subtitle {
+  text-align: left;
+}
+.empty {
+  height: 150px;
+}
+/* Navbar */
+.logo {
+  width: 70px;
+}
+#navbar {
+  font-weight: 700;
+}
+#koeuromall {
+  color: coral !important;
+}
+/* Navbar -end- */
+
+.buttons {
+  position: absolute;
+  bottom: 20px; /* 하단 여백 조정 */
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* 부모 요소에 대한 전체 너비 */
+  top: 0%;
+  padding: 0 20px; /* 좌우 여백 조정 */
+}
+
+.buttons button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.directionPrev,
+.directionNext {
+  border-bottom: 3px solid white;
+}
+.directionPrev {
+  padding-left: 20px;
+}
+.directionNext {
+  padding-right: 20px;
+}
+.Koeuro {
+  font-weight: bold;
+}
+.KOEURONAME {
+  font-weight: bold;
+}
+.textBox {
+  margin-bottom: 80px;
+}
+.KOEUROIMG {
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+}
+#koeuroBox {
+  align-items: center;
+  display: grid;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  width: 100%;
+  top: 58%; /* 이미지 컨테이너 상단으로부터 50% 위치로 이동 */
+  left: 50%; /* 이미지 컨테이너 왼쪽으로부터 50% 위치로 이동 */
+  transform: translate(-50%, -50%); /* 텍스트를 중앙으로 정렬 */
+  font-size: 18px; /* 텍스트 크기 설정 */
+  text-align: center; /* 텍스트를 수평으로 가운데 정렬 */
+}
+/* DevelopingComponent */
+
+.Koeurosubtitle {
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: -95px;
+}
+.KoeuroExplanation {
+  position: relative;
+  font-size: 20px;
+}
+
+.KoeuroLink {
+  height: 350px;
+  opacity: 0.1;
+  transform: rotate(-65deg);
+}
+
+/* DevelopingComponent END*/
+
+/* Customer */
+.List {
+  text-align: left;
+  font-size: 14px;
+}
+.Listli {
+  margin-bottom: 20px;
+}
+/* Customer END */
+
+/* Koeuro  */
+
+.banner-layout1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.thinking {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.thinkingImg {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.banner-layout1:hover .thinkingImg {
+  transform: translateY(-10%);
+}
+
+.white-box {
+  background-color: white;
+  margin: 200px 600px;
+  width: 700px;
+  height: 200px;
+  padding: 37px;
+}
+#subtext {
+  font-size: 18px;
+  font-weight: 600;
+}
+.vision-text-box {
+  width: 50%; /* 화면 가로 비율의 약 50%로 설정 */
+  height: 300px;
+}
+
+.vision-text-box .vision-text-title,
+.vision-text-box .vision-text-content {
+  color: black; /* 텍스트 색상 */
+  font-size: 20px;
+  font-weight: 900;
+  text-align: left;
+  align-items: center;
+}
+
+/* Koeuro END */
+
+/* Partner */
+
+.Partners {
+  text-align: left;
+  margin-bottom: 50px;
+}
+.exordiumTitle {
+  font-size: 25px;
+}
+.exordiumImg {
+  text-align: left;
+  padding-right: 20px;
+}
+.exordiumTable {
+  margin-top: 15px;
+  margin-left: 5%;
+}
+.exordium {
+  text-align: left;
+}
+.exordiumName {
+  font-weight: 600;
+  font-size: 18px;
+}
+.exordiumPosition {
+  font-size: 14px;
+}
+
+.slideContainer {
+  margin-top: 200px;
+  height: 300px;
+  width: 100%;
+}
+
+.client-slide-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slideImgBox {
+  display: flex;
+  align-items: center;
+
+  height: 300px;
+  transition: transform 1s ease;
+  margin-top: 50px;
+}
+
+.animate-slide {
+  transform: translateX(-215px);
+}
+
+.client-slide-box img {
+  max-width: 215px;
+  height: auto;
+  margin: 15px;
+}
+#partnerImg {
+  border-radius: 70%;
+}
+.partnerImg {
+  width: 60px;
+  border-radius: 70%;
+}
+.PartnersImg {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  width: 80%;
+}
+/* Partner END */
+/* Social */
+.social {
+  margin: 250px;
+  /* margin: 0 auto; */
+  width: 50%;
+  text-align: left;
+}
+.social table {
+  width: 100%;
+}
+.iconSocial {
+  width: 60px;
+  position: absolute;
+  opacity: 0.2;
+}
+.SocialTitle {
+  margin-left: 38px;
+  padding-top: 7px;
+}
+.socialBtn {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+}
+
+.socialInterval {
+  width: 333px;
+}
+.socialBtn:hover .subSocial {
+  font-weight: 700;
+}
+.subSocial {
+  font-size: 12px;
+}
+.socialTh {
+  width: 33.33%;
+}
+
+/* Social END */
+
+/* Question */
+.helpImg {
+  width: 100%;
+  position: absolute;
+  margin-top: 100px;
+  left: 0;
+}
+.helpTable {
+  /* border-top: 2px solid black; */
+  width: 25px;
+  padding-top: 15px;
+}
+.helpTable::before {
+  content: '';
+  display: block;
+  border-top: 2px solid black;
+  margin-top: -85px; /* padding-top 값과 동일한 음수값으로 지정 */
+}
+.subHelpTitle {
+  padding-left: 15px;
+  font-size: 18px;
+  text-align: left;
+}
+.mainHelpTitle {
+  padding-left: 15px;
+  font-size: 33px;
+  text-align: left;
+}
+.additional {
+  text-align: left;
+  padding-left: 15px;
+}
+
+/* About */
+.inputBox {
+  width: 500px;
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #e9e9e9;
+}
+.inputBox:focus {
+  outline: none;
+}
+.inquiryTable {
+  height: 60px;
+  text-align: left;
+}
+.btn__primary {
+  background-color: #1b1a1a;
+  counter-reset: #fff;
+}
+
+.btn {
+  color: #fff;
+  background-color: #1b1a1a;
+  font-family: 'Heebo', sans-serif;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+  font-size: 15px;
+  font-weight: 700;
+  min-width: 170px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding: 0 15px;
+  letter-spacing: 1px;
+  border: 0;
+  border-radius: 1px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3 linear;
+  display: inline-block;
+  user-select: none;
+}
+.btn::before {
+  content: '';
+  position: absolute;
+  left: -100%;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.631));
+  transition: left 0.8s ease-out;
+}
+
+.btn:hover::before {
+  background-color: #1b1a1a;
+  color: white;
+  left: 100%;
+}
+.btn:hover {
+  background-color: #1b1a1a;
+  color: white;
+}
+#aboutCheck {
+  font-size: 13px;
+}
+textarea {
+  min-height: 90px;
+  height: auto;
+  border-bottom: 2px solid #e9e9e9;
+}
+/* Question END */
+/* OurValue */
+.about-box {
+  background-color: white;
+  margin: 200px -15%;
+  width: 800px;
+  height: 250px;
+  padding: 37px;
+}
+.about-text-title {
+  color: black;
+  font-size: 13px;
+  text-align: left;
+  align-items: center;
+}
+#textsub {
+  font-size: 25px;
+  font-weight: 600;
+}
+/* OurValue */
+/* Madang */
+.OnelineIntroductison {
+  text-align: left;
+  margin-top: 15px;
+  padding-left: 35px;
+}
+.OnelineIntroductison > strong {
+  font-size: 13px;
+}
+.MadangImg {
+  width: 95%;
+}
+.madangBox {
+  margin-top: 50px;
+  color: black;
+  border: 1px solid black;
+  padding: 30px 30px 30px 30px;
+}
+.madangTitle {
+  font-weight: 900;
+}
+.madangContents {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  font-size: 13px;
+}
+.Marketing {
+  text-align: left;
+}
+#message {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 900;
+
+  color: red;
+}
+#buttonContainer {
+  text-align: left;
+}
+#terms {
+  margin-left: 1em;
+}
+.agreement {
+  font-size: 13px;
+}
+#checkBox {
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+.assent {
+  margin-top: 5em;
+  text-align: left;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.partners-E-mail {
+  text-align: right;
+}
+.Instructions_table_td {
+  text-align: center;
+  width: 20%;
+  border: 1px solid rgb(221, 221, 221);
+}
+.Instructions_table_th {
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(221, 221, 221);
+  text-align: center;
+}
+
+.assent > div {
+  margin-bottom: 1em;
+}
+.instructions-box {
+  max-height: 200px; /* 원하는 높이 설정 */
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+  padding: 15px; /* 패딩 설정 */
+  border: 1px solid #ccc; /* 테두리 설정 */
+  background-color: #ffffff; /* 배경 색상 설정 */
+  font-size: 13px;
+  text-align: left; /* 글자 왼쪽 정렬 */
+}
+
+/* footer */
+.footersub {
+  color: #9b9b9b;
+  text-align: left;
+  font-size: 13px;
+  margin-right: 10px; /* 각 링크 사이의 간격 조절 */
+  transition: all 0.3s;
+}
+.footersub:hover {
+  color: white;
+  font-weight: 600;
+}
+.footercontents {
+  color: #9b9b9b;
+  text-align: left;
+  height: 55px;
+}
+.footerNav {
+  text-align: left;
+  font-weight: 700;
+}
+.subfooter {
+  color: #9b9b9b;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+.footersub:not(:last-child)::after {
+  content: '|';
+  margin-left: 10px;
+}
+.footercontents:hover .footersub:not(:last-child)::after {
+  color: #9b9b9b;
+  font-weight: 100;
+}
+.footerImg {
+  width: 20px;
+  margin-right: 15px;
+  filter: invert(100%);
+}
+
+/* footer END */
+
+@keyframes blink-animation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 auto;
+    /* width: 50%; */ /* 주석 처리 또는 삭제 */
+  }
+  .col-md-6 {
+    width: auto !important; /* 부트스트랩 스타일 덮어쓰기 */
+  }
+}
+/* 모바일 */
+@media (max-width: 768px) {
+  .KoeuroLink {
+    position: absolute;
+    top: 1250px; /* 모바일 환경에서는 화면의 상단에 위치하도록 조정 */
+    left: 50%; /* 가운데 정렬 */
+    transform: translateX(-50%) rotate(-65deg); /* 가운데 정렬 및 회전 적용 */
+    height: auto; /* 높이 자동으로 조정되도록 설정 */
+    width: 35vw; /* 화면 너비의 80% 만큼의 너비를 가지도록 설정 */
+    opacity: 0.1;
+  }
+}

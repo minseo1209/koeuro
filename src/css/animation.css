@@ -1,0 +1,13 @@
+.appear_from_bottom {
+  animation: appear_from_bottom ease 1.5s;
+}
+
+@keyframes appear_from_bottom {
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
