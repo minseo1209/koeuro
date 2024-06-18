@@ -35,9 +35,7 @@ function NavigationComponent() {
           >
             코유로 몰
           </a>
-          <Link to="/contact" className="text-decoration-none text-dark">
-            사업소개
-          </Link>
+
           <Link to="/Notices" className="text-decoration-none text-dark">
             공지사항
           </Link>
