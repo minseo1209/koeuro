@@ -1,20 +1,34 @@
-.video-section {
+.videoSection {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
 }
 
-#video-background {
+.videoSection > .bannerWave {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.videoContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.videoElement {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  padding: 0 4.5rem;
 }
 
-.video-content {
+.videoContent {
   position: absolute;
   top: 50%;
   left: 30%;
@@ -22,3 +36,22 @@
   text-align: center;
   color: white;
 }
+
+/* wave */
+.waveOpacity {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.waveOpacity svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 81px;
+}
+/* wave -end- */
