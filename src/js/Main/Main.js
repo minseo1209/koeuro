@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import { Button, Nav } from 'react-bootstrap';
+import ReactDOM from 'react-dom';
 
 import '../../css/main.css';
 import '../../css/video.css';
+
 import Brand from '../Main/Brand.js';
 import Koeuro from '../Main/Koeuro.js';
 import Customer from '../Main/Customer.js';
 import DevelopingComponent from '../Main/DevelopingComponent.js';
 import Partners from '../Main/Partners.js';
-import ReactDOM from 'react-dom';
-import { Button, Nav } from 'react-bootstrap';
 
 function Main() {
   const videos = [
