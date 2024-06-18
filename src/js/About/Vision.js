@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import '../../css/about.css';
+import '../../css/about.module.css';
 
 function BrandShop() {
   const brands = [

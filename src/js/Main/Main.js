@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Button, Nav } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 
-import '../../css/main.css';
-import '../../css/video.css';
+import '../../css/main.module.css';
+import '../../css/video.module.css';
 
 import Brand from '../Main/Brand.js';
 import Koeuro from '../Main/Koeuro.js';

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import BrandShop from './BrandShop';
 import OurValue from './OurValue';
 import Vision from './Vision';
-import '../../css/about.css';
+import '../../css/about.module.css';
 
 function About() {
   const brandStoryRef = useRef(null);

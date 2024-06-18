@@ -47,6 +47,13 @@ ul {
 }
 
 /* Navbar */
+.headerBar {
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
   width: 70px;
 }
@@ -58,8 +65,8 @@ ul {
 #koeuromall {
   color: coral !important;
 }
-
 /* Navbar -end- */
+
 .buttons {
   position: absolute;
   bottom: 20px; /* 하단 여백 조정 */

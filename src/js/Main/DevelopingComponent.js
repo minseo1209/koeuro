@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import '../../css/animation.css';
+import '../../css/animation.module.css';
 
 function DevelopingComponent() {
   const [isVisible, setIsVisible] = useState(false);

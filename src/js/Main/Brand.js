@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../css/brands.css';
+import '../../css/brands.module.css';
 
 function Brand() {
   const brands = [

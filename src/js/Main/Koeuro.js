@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../../css/animation.css';
+import '../../css/animation.module.css';
 
 function Koeuro() {
   const [isVisible, setIsVisible] = useState(false);
