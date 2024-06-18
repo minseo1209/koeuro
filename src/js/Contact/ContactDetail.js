@@ -25,5 +25,5 @@ const ContactDetail = () => {
     </div>
   );
 };
-// 내용
+
 export default ContactDetail;
