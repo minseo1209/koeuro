@@ -12,13 +12,16 @@ ul {
 .subtitle {
   text-align: left;
 }
+
 .empty {
   height: 150px;
 }
+
 /* Notices */
 .bordlist {
   border-top: 2px solid black;
 }
+
 .bordTitle {
   font-size: 20px;
   padding-left: 5em;
@@ -27,30 +30,36 @@ ul {
   border-bottom: 1px solid gray;
   text-align: left;
 }
+
 .bordDay {
   margin-right: 5em;
   font-size: 14px;
 }
+
 .news {
   font-weight: 900;
   color: coral;
   font-size: 17px;
 }
+
 .bordName {
   color: #acacac;
 }
+
 /* Navbar */
 .logo {
   width: 70px;
 }
+
 #navbar {
   font-weight: 700;
 }
+
 #koeuromall {
   color: coral !important;
 }
-/* Navbar -end- */
 
+/* Navbar -end- */
 .buttons {
   position: absolute;
   bottom: 20px; /* 하단 여백 조정 */
@@ -74,26 +83,33 @@ ul {
 .directionNext {
   border-bottom: 3px solid white;
 }
+
 .directionPrev {
   padding-left: 20px;
 }
+
 .directionNext {
   padding-right: 20px;
 }
+
 .Koeuro {
   font-weight: bold;
 }
+
 .KOEURONAME {
   font-weight: bold;
 }
+
 .textBox {
   margin-bottom: 80px;
 }
+
 .KOEUROIMG {
   background-repeat: no-repeat;
   height: 300px;
   text-align: center;
 }
+
 #koeuroBox {
   align-items: center;
   display: grid;
@@ -112,14 +128,15 @@ ul {
   font-size: 18px; /* 텍스트 크기 설정 */
   text-align: center; /* 텍스트를 수평으로 가운데 정렬 */
 }
-/* DevelopingComponent */
 
+/* DevelopingComponent */
 .Koeurosubtitle {
   margin-top: 50px;
   font-weight: 600;
   font-size: 20px;
   margin-bottom: -95px;
 }
+
 .KoeuroExplanation {
   position: relative;
   font-size: 20px;
@@ -130,7 +147,6 @@ ul {
   opacity: 0.1;
   transform: rotate(-65deg);
 }
-
 /* DevelopingComponent END*/
 
 /* Customer */
@@ -138,13 +154,13 @@ ul {
   text-align: left;
   font-size: 14px;
 }
+
 .Listli {
   margin-bottom: 20px;
 }
 /* Customer END */
 
 /* Koeuro  */
-
 .banner-layout1 {
   position: relative;
   overflow: hidden;
@@ -176,10 +192,12 @@ ul {
   height: 200px;
   padding: 37px;
 }
+
 #subtext {
   font-size: 18px;
   font-weight: 600;
 }
+
 .vision-text-box {
   width: 50%; /* 화면 가로 비율의 약 50%로 설정 */
   height: 300px;
@@ -193,33 +211,37 @@ ul {
   text-align: left;
   align-items: center;
 }
-
 /* Koeuro END */
 
 /* Partner */
-
 .Partners {
   text-align: left;
   margin-bottom: 50px;
 }
+
 .exordiumTitle {
   font-size: 25px;
 }
+
 .exordiumImg {
   text-align: left;
   padding-right: 20px;
 }
+
 .exordiumTable {
   margin-top: 15px;
   margin-left: 5%;
 }
+
 .exordium {
   text-align: left;
 }
+
 .exordiumName {
   font-weight: 600;
   font-size: 18px;
 }
+
 .exordiumPosition {
   font-size: 14px;
 }
@@ -254,13 +276,16 @@ ul {
   height: auto;
   margin: 15px;
 }
+
 #partnerImg {
   border-radius: 70%;
 }
+
 .partnerImg {
   width: 60px;
   border-radius: 70%;
 }
+
 .PartnersImg {
   position: absolute;
   width: 100%;
@@ -268,6 +293,7 @@ ul {
   width: 80%;
 }
 /* Partner END */
+
 /* Social */
 .social {
   margin: 250px;
@@ -275,18 +301,22 @@ ul {
   width: 50%;
   text-align: left;
 }
+
 .social table {
   width: 100%;
 }
+
 .iconSocial {
   width: 60px;
   position: absolute;
   opacity: 0.2;
 }
+
 .SocialTitle {
   margin-left: 38px;
   padding-top: 7px;
 }
+
 .socialBtn {
   border: none;
   background-color: rgba(255, 255, 255, 0);
@@ -296,16 +326,18 @@ ul {
 .socialInterval {
   width: 333px;
 }
+
 .socialBtn:hover .subSocial {
   font-weight: 700;
 }
+
 .subSocial {
   font-size: 12px;
 }
+
 .socialTh {
   width: 33.33%;
 }
-
 /* Social END */
 
 /* Question */
@@ -315,27 +347,32 @@ ul {
   margin-top: 100px;
   left: 0;
 }
+
 .helpTable {
   /* border-top: 2px solid black; */
   width: 25px;
   padding-top: 15px;
 }
+
 .helpTable::before {
   content: '';
   display: block;
   border-top: 2px solid black;
   margin-top: -85px; /* padding-top 값과 동일한 음수값으로 지정 */
 }
+
 .subHelpTitle {
   padding-left: 15px;
   font-size: 18px;
   text-align: left;
 }
+
 .mainHelpTitle {
   padding-left: 15px;
   font-size: 33px;
   text-align: left;
 }
+
 .additional {
   text-align: left;
   padding-left: 15px;
@@ -350,13 +387,16 @@ ul {
   border-right: none;
   border-bottom: 2px solid #e9e9e9;
 }
+
 .inputBox:focus {
   outline: none;
 }
+
 .inquiryTable {
   height: 60px;
   text-align: left;
 }
+
 .btn__primary {
   background-color: #1b1a1a;
   counter-reset: #fff;
@@ -385,6 +425,7 @@ ul {
   display: inline-block;
   user-select: none;
 }
+
 .btn::before {
   content: '';
   position: absolute;
@@ -402,19 +443,23 @@ ul {
   color: white;
   left: 100%;
 }
+
 .btn:hover {
   background-color: #1b1a1a;
   color: white;
 }
+
 #aboutCheck {
   font-size: 13px;
 }
+
 textarea {
   min-height: 90px;
   height: auto;
   border-bottom: 2px solid #e9e9e9;
 }
 /* Question END */
+
 /* OurValue */
 .about-box {
   background-color: white;
@@ -423,46 +468,56 @@ textarea {
   height: 250px;
   padding: 37px;
 }
+
 .about-text-title {
   color: black;
   font-size: 13px;
   text-align: left;
   align-items: center;
 }
+
 #textsub {
   font-size: 25px;
   font-weight: 600;
 }
 /* OurValue */
+
 /* Madang */
 .OnelineIntroductison {
   text-align: left;
   margin-top: 15px;
   padding-left: 35px;
 }
+
 .OnelineIntroductison > strong {
   font-size: 13px;
 }
+
 .MadangImg {
   width: 95%;
 }
+
 .madangBox {
   margin-top: 50px;
   color: black;
   border: 1px solid black;
   padding: 30px 30px 30px 30px;
 }
+
 .madangTitle {
   font-weight: 900;
 }
+
 .madangContents {
   margin-top: 13px;
   margin-bottom: 13px;
   font-size: 13px;
 }
+
 .Marketing {
   text-align: left;
 }
+
 #message {
   text-align: left;
   margin-top: 20px;
@@ -471,15 +526,19 @@ textarea {
 
   color: red;
 }
+
 #buttonContainer {
   text-align: left;
 }
+
 #terms {
   margin-left: 1em;
 }
+
 .agreement {
   font-size: 13px;
 }
+
 #checkBox {
   text-align: left;
   margin-bottom: 2em;
@@ -494,11 +553,13 @@ textarea {
 .partners-E-mail {
   text-align: right;
 }
+
 .Instructions_table_td {
   text-align: center;
   width: 20%;
   border: 1px solid rgb(221, 221, 221);
 }
+
 .Instructions_table_th {
   background-color: rgb(250, 250, 250);
   border: 1px solid rgb(221, 221, 221);
@@ -508,6 +569,7 @@ textarea {
 .assent > div {
   margin-bottom: 1em;
 }
+
 .instructions-box {
   max-height: 200px; /* 원하는 높이 설정 */
   overflow-y: auto; /* 세로 스크롤 활성화 */
@@ -526,19 +588,23 @@ textarea {
   margin-right: 10px; /* 각 링크 사이의 간격 조절 */
   transition: all 0.3s;
 }
+
 .footersub:hover {
   color: white;
   font-weight: 600;
 }
+
 .footercontents {
   color: #9b9b9b;
   text-align: left;
   height: 55px;
 }
+
 .footerNav {
   text-align: left;
   font-weight: 700;
 }
+
 .subfooter {
   color: #9b9b9b;
   margin-top: 30px;
@@ -549,16 +615,17 @@ textarea {
   content: '|';
   margin-left: 10px;
 }
+
 .footercontents:hover .footersub:not(:last-child)::after {
   color: #9b9b9b;
   font-weight: 100;
 }
+
 .footerImg {
   width: 20px;
   margin-right: 15px;
   filter: invert(100%);
 }
-
 /* footer END */
 
 @keyframes blink-animation {
@@ -578,6 +645,7 @@ textarea {
     width: auto !important; /* 부트스트랩 스타일 덮어쓰기 */
   }
 }
+
 /* 모바일 */
 @media (max-width: 768px) {
   .KoeuroLink {
