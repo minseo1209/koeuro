@@ -7,6 +7,8 @@ import { MemoizedMain as Main } from './js/Main/Main';
 import About from './js/About/About';
 import Madang from './js/Madang/Madang';
 import Notices from './js/Notices/Notices';
+import Contact from './js/Contact/Contact';
+import ContactDetail from './js/Contact/ContactDetail';
 import NoticeDetail from './js/Notices/NoticeDetail';
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
             <Route path="/madang" element={<Madang />} />
             <Route path="/Notices" element={<Notices />} />
             <Route path="/notices/:id" element={<NoticeDetail />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact/:id" element={<ContactDetail />} />
           </Routes>
         </main>
       </div>

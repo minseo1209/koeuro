@@ -380,6 +380,7 @@ ul {
 
 /* About */
 .inputBox {
+  resize: none;
   width: 500px;
   height: 50px;
   border-top: none;
