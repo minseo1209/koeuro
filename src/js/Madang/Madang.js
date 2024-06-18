@@ -79,7 +79,7 @@ function Madang() {
       <div>
         <div id="hide" style={{ display: 'none' }}>
           <div className="madangBox">
-            <div style={{ textAlign: 'center' }}>
+            <div style={{ textAlign: 'center', fontWeight: '900' }}>
               <h5>주식회사 코유로 마케팅 제휴 약관</h5>
             </div>
             <div className="Marketing">

@@ -38,7 +38,7 @@ function NavigationComponent() {
           <Link to="/contact" className="text-decoration-none text-dark">
             사업소개
           </Link>
-          <Link to="/contact" className="text-decoration-none text-dark">
+          <Link to="/Notices" className="text-decoration-none text-dark">
             공지사항
           </Link>
           <Link to="/contact" className="text-decoration-none text-dark">

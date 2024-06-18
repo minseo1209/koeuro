@@ -6,6 +6,8 @@ import NavigationComponent from './js/NavigationComponent';
 import { MemoizedMain as Main } from './js/Main/Main';
 import About from './js/About/About';
 import Madang from './js/Madang/Madang';
+import Notices from './js/Notices/Notices';
+import NoticeDetail from './js/Notices/NoticeDetail';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
             <Route exact path="/" element={<Main />} />
             <Route path="/about" element={<About />} />
             <Route path="/madang" element={<Madang />} />
+            <Route path="/Notices" element={<Notices />} />
+            <Route path="/notices/:id" element={<NoticeDetail />} />
           </Routes>
         </main>
       </div>

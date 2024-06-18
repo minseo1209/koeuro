@@ -15,6 +15,30 @@ ul {
 .empty {
   height: 150px;
 }
+/* Notices */
+.bordlist {
+  border-top: 2px solid black;
+}
+.bordTitle {
+  font-size: 20px;
+  padding-left: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid gray;
+  text-align: left;
+}
+.bordDay {
+  margin-right: 5em;
+  font-size: 14px;
+}
+.news {
+  font-weight: 900;
+  color: coral;
+  font-size: 17px;
+}
+.bordName {
+  color: #acacac;
+}
 /* Navbar */
 .logo {
   width: 70px;
