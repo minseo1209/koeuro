@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Button, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import '../css/main.css';
+// import '../css/main.css';
+import styles from "../css/main.module.css";
 
+//Header
 function NavigationComponent() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -11,9 +13,9 @@ function NavigationComponent() {
   };
 
   return (
-    <header className="fixed-top bg-white px-4 py-3 shadow-sm">
+    <header className="fixed-top bg-white px-4 py-4 shadow-sm">
       <div
-        className="container d-flex justify-content-between align-items-center"
+        className={`container ${styles.headerBar}`}
         id="navbar"
       >
         <Link to="/" className="text-decoration-none text-dark fs-4">
