@@ -31,9 +31,7 @@ function Main() {
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [currentVideoText, setCurrentVideoText] = useState(videoTexts[0]);
-  const [currentVideoSubText, setCurrentVideoSubText] = useState(
-    videoSubTexts[0]
-  );
+  const [currentVideoSubText, setCurrentVideoSubText] = useState(videoSubTexts[0]);
 
   // 비디오 전환을 위한 함수
   const changeVideo = (nextIndex) => {
@@ -168,22 +166,13 @@ function Main() {
                 <br />
                 <div style={{ height: '15px' }}></div>
                 <span className="subfooter">
-                  <img
-                    src="../assets/images/icon/free-icon-facebook-3128208.png"
-                    className="footerImg"
-                  />
+                  <img src="../assets/images/icon/free-icon-facebook-3128208.png" className="footerImg" />
                 </span>
                 <span className="subfooter">
-                  <img
-                    src="../assets/images/icon/free-icon-instagram-717392.png"
-                    className="footerImg"
-                  />
+                  <img src="../assets/images/icon/free-icon-instagram-717392.png" className="footerImg" />
                 </span>
                 <span className="subfooter">
-                  <img
-                    src="../assets/images/icon/free-icon-youtube-152810.png"
-                    className="footerImg"
-                  />
+                  <img src="../assets/images/icon/free-icon-youtube-152810.png" className="footerImg" />
                 </span>
               </div>
             </Nav.Link>
