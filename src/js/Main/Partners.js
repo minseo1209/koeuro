@@ -52,8 +52,8 @@ function ClientSlide({ startIdx }) {
   return (
     <div>
       {/* 
-        현재 인덱스(currentIndex)를 기준으로 Client 배열에서 4개씩 이미지를 가져옵니다.
-        배열의 끝에 도달했을 때, 다시 배열의 처음부터 이미지를 가져올 수 있도록 조건을 추가합니다.
+        현재 인덱스(currentIndex)를 기준으로 Client 배열에서 4개씩 이미지를 가져옴.
+        배열의 끝에 도달했을 때, 다시 배열의 처음부터 이미지를 가져올 수 있도록 조건을 추가.
       */}
       {Array.from({ length: 4 }).map((_, index) => {
         const clientIndex = (currentIndex + index) % Client.length;
@@ -69,7 +69,7 @@ function ClientSlide({ startIdx }) {
   );
 }
 
-// Partner 컴포넌트: 각 파트너 정보를 표현합니다.
+// Partner 컴포넌트: 각 파트너 정보를 표현.
 function Partner({ title, imgSrc, name, position }) {
   return (
     <div>
@@ -93,7 +93,7 @@ function Partner({ title, imgSrc, name, position }) {
   );
 }
 
-// Partners 컴포넌트: 파트너 정보를 포함하는 컴포넌트입니다.
+// Partners 컴포넌트: 파트너 정보를 포함하는 컴포넌트
 function Partners() {
   // 파트너 정보 배열
   const partners = [
