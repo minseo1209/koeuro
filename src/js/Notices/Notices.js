@@ -145,8 +145,9 @@ const notices = [
       {
         type: 'map',
         value:
-          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8792890156276!2d2.5137913156753454!3d48.96943307929909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e61670e83d816d%3A0xbdea11e58b79e9e7!2sParc%20des%20Expositions%20de%20Paris-Nord%20Villepinte!5e0!3m2!1sen!2sfr!4v1624297073891!5m2!1sen!2sfr&markers=color:red%7Clabel:P%7C48.969433,2.515980" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" scrolling="no"></iframe>',
+          '<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA-abc123def456GHI789jklMNOPQRSTU&q=48.969433,2.515980&zoom=15&markers=color:red%7Clabel:P%7C48.969433,2.515980" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       },
+
       { type: 'text', value: '프랑스 파리 (France Paris)' },
       { type: 'text', value: 'Parc des Expositions de Villepinte' },
       {
