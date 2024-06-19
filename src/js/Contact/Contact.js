@@ -83,7 +83,7 @@ function Contact() {
               <Link to={`/contact/${contact.id}`} state={{ contact }}>
                 <span className="news">{contact.state}</span>
                 <br />
-                <span className="bordDay">{contact.Day}</span>
+                <span className="bordDay">{contact.day}</span>
                 <span className="bordName">{contact.title}</span>
               </Link>
             </li>
