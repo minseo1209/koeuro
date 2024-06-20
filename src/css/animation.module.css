@@ -1,8 +1,8 @@
-.appear_from_bottom {
-  animation: appear_from_bottom ease 1.5s;
+.appearFromBottom {
+  animation: appearFromBottom ease 1.5s;
 }
 
-@keyframes appear_from_bottom {
+@keyframes appearFromBottom {
   0% {
     transform: translateY(150px);
     opacity: 0;
