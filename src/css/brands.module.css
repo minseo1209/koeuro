@@ -52,89 +52,98 @@ a {
   color: black;
 }
 
-.partner-brand-container {
+.partnerBrandContainer {
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-.partner-brand-title {
-  font-size: 28px;
-  margin: 0px;
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-.titleimg {
-  width: 70px;
-  margin-right: 14px; /* 이미지 너비 조절 */
-}
-
-.brands-container {
-  text-align: left;
-  margin-top: 20px;
-}
-
-.brands-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3개의 열로 그리드 레이아웃 설정 */
-  gap: 20px; /* 그리드 아이템 사이의 간격 설정 */
-}
-
-.b-card {
-  text-align: left;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  height: 300px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.b-card:hover {
-  color: black;
-  opacity: 1;
-}
-.brand-card {
-  text-align: left;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  height: 300px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.brand-card:hover {
-  color: black;
-  opacity: 1;
-}
-
-.partner-brand-titles {
+/* Partner Brand Titles */
+.partnerBrandTitles {
   display: flex;
   justify-content: center; /* 요소들을 수평으로 가운데 정렬 */
   align-items: center;
   text-align: center; /* 내부 텍스트를 수평으로 가운데 정렬 */
 }
 
-.partner-brand-title {
+.partnerBrandTitle {
+  font-size: 28px;
+  margin: 0px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.titleImg {
+  width: 70px;
+  margin-right: 14px; /* 이미지 너비 조절 */
+}
+/* Partner Brand Titles -end- */
+
+/* Brnads Container */
+.brandsContainer {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.brandsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개의 열로 그리드 레이아웃 설정 */
+  gap: 20px; /* 그리드 아이템 사이의 간격 설정 */
+}
+
+.bCard {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bCard:hover {
+  color: black;
+  opacity: 1;
+}
+
+.brandCard {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brandCard:hover {
+  color: black;
+  opacity: 1;
+}
+
+.partnerBrandTitle {
   margin: 0 10px; /* 좌우 여백 설정 */
 }
 
-.brand-name {
+.brandName {
   margin-top: 10px;
   text-align: left;
   font-weight: 900;
   font-size: 21px;
 }
 
-.brand-description {
+.brandDescription {
   text-align: left;
   margin-top: 10px;
   font-size: 14px;
 }
-.brand-logo {
+
+.brandLogo {
   width: 50%;
 }
+
 .Listli:hover {
   font-weight: 600;
 }
+/* Brnads Container -end- */

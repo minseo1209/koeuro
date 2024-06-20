@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../css/brands.module.css';
+import brandStyles from '../../css/brands.module.css';
 
 // 메인용 코유로 브랜드 안내
 
@@ -33,35 +33,35 @@ function Brand() {
 
   return (
     <section>
-      <div className="partner-brand-container">
-        <div className="partner-brand-container">
-          <div className="partner-brand-titles">
-            <div className="partner-brand-title">유럽의 명품을</div>
-            <img src="../assets/images/logo/logo_o.png" className="titleimg" alt="유럽의 명품" />
-            <div className="partner-brand-title">에서 만나보세요</div>
+      <div className={brandStyles.partnerBrandContainer}>
+        <div className={brandStyles.partnerBrandContainer}>
+          <div className={brandStyles.partnerBrandTitles}>
+            <div className={brandStyles.partnerBrandTitle}>유럽의 명품을</div>
+            <img src="../assets/images/logo/logo_o.png" className={brandStyles.titleImg} alt="유럽의 명품" />
+            <div className={brandStyles.partnerBrandTitle}>에서 만나보세요</div>
           </div>
-          <div className="brands-container"></div>
+          <div className={brandStyles.brandsContainer}></div>
         </div>
-        <div className="brands-container">
-          <div className="brands-grid">
+        <div className={brandStyles.brandsContainer}>
+          <div className={brandStyles.brandsGrid}>
             {brands.map((brand, index) => (
               <a
                 key={index}
                 href={brand.link}
                 target="_blank"
-                className="brand-link"
+                // className={brandStyles.brandLink}
                 onMouseEnter={() => setHoveredBrand(index)}
                 onMouseLeave={() => setHoveredBrand(null)}
               >
                 <div
-                  className="b-card"
+                  className={brandStyles.bCard}
                   style={{
                     backgroundImage: `url(${hoveredBrand === index ? brand.hoverImage : brand.logo})`,
                   }}
                 >
                   <div className="brand-card-content">
-                    <h className="brand-name">{brand.name}</h>
-                    <p className="brand-description">{brand.description}</p>
+                    <h className={brandStyles.brandName}>{brand.name}</h>
+                    <p className={brandStyles.brandDescription}>{brand.description}</p>
                   </div>
                 </div>
               </a>
