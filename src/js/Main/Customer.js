@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../../css/brands.module.css';
 
+// 메인용 고객 문의 안내
+
 function Customer() {
   const brands = [
     {
@@ -25,8 +27,7 @@ function Customer() {
       name: '마당',
       link1: '마당문의',
       href1: '#',
-      description:
-        '소상공인을 위한 극 최적화 맞춤형 마케팅 서비스 마당에서 시작하세요.',
+      description: '소상공인을 위한 극 최적화 맞춤형 마케팅 서비스 마당에서 시작하세요.',
     },
   ];
 
@@ -39,11 +40,7 @@ function Customer() {
         <div className="partner-brand-container">
           <div className="partner-brand-titles">
             <div className="partner-brand-title">고객 만족 실현을</div>
-            <img
-              src="../assets/images/logo/logo_o.png"
-              className="titleimg"
-              alt="유럽의 명품"
-            />
+            <img src="../assets/images/logo/logo_o.png" className="titleimg" alt="유럽의 명품" />
             <div className="partner-brand-title">에서 만나보세요</div>
           </div>
           <div className="brands-container"></div>
@@ -57,11 +54,7 @@ function Customer() {
                   <p className="brand-description" style={{ fontSize: '14px' }}>
                     {brand.description}
                   </p>
-                  <ul
-                    key={index}
-                    className="List"
-                    style={{ margin: '0', padding: '0', fontSize: '11px' }}
-                  >
+                  <ul key={index} className="List" style={{ margin: '0', padding: '0', fontSize: '11px' }}>
                     <li className="Listli">
                       <a href={brand.href1} target="_blank">
                         {brand.link1}

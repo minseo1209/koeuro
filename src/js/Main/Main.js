@@ -11,6 +11,8 @@ import Customer from '../Main/Customer.js';
 import DevelopingComponent from '../Main/DevelopingComponent.js';
 import Partners from '../Main/Partners.js';
 
+// 메인 홈
+
 function Main() {
   const videos = [
     '../assets/video/main/main_video00.mp4',
@@ -87,8 +89,8 @@ function Main() {
                 key={videos[currentVideoIndex]} // 비디오 변경 시 새로운 키를 생성하여 리렌더링되도록 함
               />
               <div className={videoStyles.videoContent}>
-                <h1 className="title">{currentVideoText}</h1>
-                <h4 className="subtitle">{currentVideoSubText}</h4>
+                <h1 className={styles.title}>{currentVideoText}</h1>
+                <h4 className={styles.subtitle}>{currentVideoSubText}</h4>
               </div>
             </div>
             <div className={videoStyles.bannerWave}>

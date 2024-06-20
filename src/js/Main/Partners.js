@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+// 메인용 코유로 파트너 안내
+
 const Client = [
   {
     id: 0,
@@ -58,11 +60,7 @@ function ClientSlide({ startIdx }) {
       {Array.from({ length: 4 }).map((_, index) => {
         const clientIndex = (currentIndex + index) % Client.length;
         return (
-          <img
-            key={Client[clientIndex].id}
-            src={Client[clientIndex].imgSrc}
-            alt={`Client ${Client[clientIndex].id}`}
-          />
+          <img key={Client[clientIndex].id} src={Client[clientIndex].imgSrc} alt={`Client ${Client[clientIndex].id}`} />
         );
       })}
     </div>
@@ -98,8 +96,7 @@ function Partners() {
   // 파트너 정보 배열
   const partners = [
     {
-      title:
-        'KOEURO는 파트너사와 함께 최고의 가치를 위하여 좋은 품질의 제품을 지향 하겠습니다.',
+      title: 'KOEURO는 파트너사와 함께 최고의 가치를 위하여 좋은 품질의 제품을 지향 하겠습니다.',
       imgSrc: '../assets/images/blog/author/1.jpg',
       name: 'Gon Jo',
       position: 'HutenGroup General representative, CEO',
@@ -111,8 +108,7 @@ function Partners() {
       position: 'HutenGroup COO',
     },
     {
-      title:
-        '모든 제품은 직접 방문 실사 후 선정이 되며, 더욱 믿을 수 있는 제품을 제공하겠습니다.',
+      title: '모든 제품은 직접 방문 실사 후 선정이 되며, 더욱 믿을 수 있는 제품을 제공하겠습니다.',
       imgSrc: '../assets/images/blog/author/3.jpg',
       name: 'Song, In-seob',
       position: 'KOEURO Team Director',
@@ -136,9 +132,7 @@ function Partners() {
 
   // 이전 파트너 보여주기 함수
   const prevPartner = () => {
-    setCurrentPartnerIndex(
-      (prevIndex) => (prevIndex - 1 + partners.length) % partners.length
-    );
+    setCurrentPartnerIndex((prevIndex) => (prevIndex - 1 + partners.length) % partners.length);
 
     const slideImgBox = document.querySelector('.slideImgBox');
     if (slideImgBox) {
@@ -162,10 +156,7 @@ function Partners() {
     <div>
       <h2 className="Partners">Our happy Partners</h2>
       <div>
-        <img
-          src="../assets/images/backgrounds/line_bg4.png"
-          className="PartnersImg"
-        />
+        <img src="../assets/images/backgrounds/line_bg4.png" className="PartnersImg" />
         <Partner {...partners[currentPartnerIndex]} />
       </div>
       {/* <div>
@@ -185,10 +176,7 @@ function Partners() {
           <tr>
             <th className="socialTh">
               <div className="socialInterval">
-                <img
-                  src="../assets/images/icon/free-icon-facebook-3128208.png"
-                  className="iconSocial"
-                />
+                <img src="../assets/images/icon/free-icon-facebook-3128208.png" className="iconSocial" />
                 <button className="socialBtn" onClick={FaceBook}>
                   <div className="SocialTitle">
                     Facebook <br />
@@ -199,26 +187,18 @@ function Partners() {
             </th>
             <th className="socialTh">
               <div className="socialInterval">
-                <img
-                  src="../assets/images/icon/free-icon-instagram-717392.png"
-                  className="iconSocial"
-                />
+                <img src="../assets/images/icon/free-icon-instagram-717392.png" className="iconSocial" />
                 <button className="socialBtn" onClick={instargram}>
                   <div className="SocialTitle">
                     instargram <br />
-                    <span className="subSocial">
-                      Follow us now @ koeuro.shop
-                    </span>
+                    <span className="subSocial">Follow us now @ koeuro.shop</span>
                   </div>
                 </button>
               </div>
             </th>
             <th className="socialTh">
               <div className="socialInterval">
-                <img
-                  src="../assets/images/icon/free-icon-youtube-152810.png"
-                  className="iconSocial"
-                />
+                <img src="../assets/images/icon/free-icon-youtube-152810.png" className="iconSocial" />
                 <button className="socialBtn" onClick={Youtube}>
                   <div className="SocialTitle">
                     Youtube <br />
@@ -231,10 +211,7 @@ function Partners() {
         </table>
       </div>
       <div class="container" style={{ height: '600px' }}>
-        <img
-          src="../assets/images/backgrounds/line_bg5.png"
-          className="helpImg"
-        />
+        <img src="../assets/images/backgrounds/line_bg5.png" className="helpImg" />
         <div class="row">
           <div class="col">
             <table>
@@ -242,19 +219,15 @@ function Partners() {
                 <th rowSpan={3} className="helpTable">
                   <br />{' '}
                 </th>
-                <th className="subHelpTitle">
-                  Please take a moment to fill out the form.
-                </th>
+                <th className="subHelpTitle">Please take a moment to fill out the form.</th>
               </tr>
               <tr>
-                <th className="mainHelpTitle">
-                  질문이나 도움이 필요할 때 언제든지 문의하십시요
-                </th>
+                <th className="mainHelpTitle">질문이나 도움이 필요할 때 언제든지 문의하십시요</th>
               </tr>
               <tr>
                 <td className="additional">
-                  우리는 각 작업에 통합적으로 접근하는 것의 중요성을 이해하고
-                  있으며 간단하고 쉬운 의사소통의 힘을 믿습니다.
+                  우리는 각 작업에 통합적으로 접근하는 것의 중요성을 이해하고 있으며 간단하고 쉬운 의사소통의 힘을
+                  믿습니다.
                 </td>
               </tr>
             </table>
@@ -280,11 +253,7 @@ function Partners() {
               </tr>
               <tr>
                 <td>
-                  <textarea
-                    placeholder="문의내용"
-                    required="true"
-                    className="inputBox"
-                  />
+                  <textarea placeholder="문의내용" required="true" className="inputBox" />
                 </td>
               </tr>
               <tr>
