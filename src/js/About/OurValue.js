@@ -30,7 +30,7 @@ function OurValue() {
         <section className="banner-layout1 pb-0 bg-parallax vision-layout">
           <div className="thinking">
             <img
-              src="/assets/images/backgrounds/8.png"
+              src="/assets/images/backgrounds/huten.png"
               alt="img"
               className="thinkingImg"
             />

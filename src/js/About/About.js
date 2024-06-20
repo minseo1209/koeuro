@@ -119,7 +119,7 @@ function About() {
       </div>
       <h3 className="AboutTitle"></h3>
       <h2 className="AboutBrandStory">
-        Our Mission{' '}
+        Our Mission
         <span className="koeuromallLink">
           <a href="https://koeuro.shop/">브랜드쇼핑몰 바로가기 &gt; </a>
         </span>
