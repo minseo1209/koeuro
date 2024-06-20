@@ -158,18 +158,11 @@ ul {
   margin-top: 50px;
   font-weight: 600;
   font-size: 20px;
-  margin-bottom: -95px;
 }
 
 .koeuroExplanation {
   position: relative;
   font-size: 20px;
-}
-
-.koeuroLink {
-  height: 350px;
-  opacity: 0.1;
-  transform: rotate(-65deg);
 }
 /* DevelopingComponent END*/
 
