@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 
-import styles from '../../css/main.module.css';
 import brandStyles from '../../css/brands.module.css';
 import aniStyles from '../../css/animation.module.css';
 
@@ -13,14 +12,16 @@ function Brand() {
       hoverImage: '../assets/images/brand/Bukowski.jpg',
       logo: '../assets/images/brand/Bukowski_1.jpg',
       link: 'https://koeuro.shop/category/Bukowski/28/',
-      description: '디자인강국 스웨덴에서 인정한 유럽명품 부코스키 인형을 한국에서 만나보세요.',
+      description:
+        '디자인강국 스웨덴에서 인정한 유럽명품 부코스키 인형을 한국에서 만나보세요.',
     },
     {
       name: 'Astra',
       hoverImage: '../assets/images/brand/Astra.jpg',
       logo: '../assets/images/brand/Astra_1.jpg',
       link: 'https://koeuro.shop/category/Astra/44/',
-      description: '100년 전통의 폴란드 미술용품을 코유로샵에서 만날 수 있습니다.',
+      description:
+        '100년 전통의 폴란드 미술용품을 코유로샵에서 만날 수 있습니다.',
     },
     {
       name: 'Nowekartonowe',
@@ -61,10 +62,16 @@ function Brand() {
           <div className={brandStyles.partnerBrandTitles}>
             <div className={brandStyles.partnerBrandTitle}>유럽의 명품을</div>
             <div className={brandStyles.logoContainer}>
-              <img src="../assets/images/logo/logo_o.png" className={brandStyles.titleImg} alt="유럽의 명품" />
+              <img
+                src="../assets/images/logo/logo_o.png"
+                className={brandStyles.titleImg}
+                alt="유럽의 명품"
+              />
               <img
                 src="../assets/images/logo/KoeuroLink.png"
-                className={`${brandStyles.koeuroLink} ${isVisible ? aniStyles.rotationFromBottom : ''}`}
+                className={`${brandStyles.koeuroLink} ${
+                  isVisible ? aniStyles.rotationFromBottom : ''
+                }`}
               />
             </div>
             <div className={brandStyles.partnerBrandTitle}>에서 만나보세요</div>
@@ -85,12 +92,16 @@ function Brand() {
                 <div
                   className={brandStyles.bCard}
                   style={{
-                    backgroundImage: `url(${hoveredBrand === index ? brand.hoverImage : brand.logo})`,
+                    backgroundImage: `url(${
+                      hoveredBrand === index ? brand.hoverImage : brand.logo
+                    })`,
                   }}
                 >
                   <div className="brand-card-content">
                     <h className={brandStyles.brandName}>{brand.name}</h>
-                    <p className={brandStyles.brandDescription}>{brand.description}</p>
+                    <p className={brandStyles.brandDescription}>
+                      {brand.description}
+                    </p>
                   </div>
                 </div>
               </a>
