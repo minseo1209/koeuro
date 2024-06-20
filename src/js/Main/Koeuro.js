@@ -27,9 +27,9 @@ function Koeuro() {
   }, []);
 
   return (
-    <div className={`koeuro ${isVisible ? aniStyles.appearFromBottom : ''}`}>
+    <div className={`koeuro`}>
       <section className={`${styles.bannerLayoutFirst} pb-0 bg-parallax vision-layout`}>
-        <div className={styles.thinking}>
+        <div className={`${styles.thinking} ${isVisible ? aniStyles.appearFromBottom : ''}`}>
           <img src="/assets/images/backgrounds/8.png" alt="img" className={styles.thinkingImg} />
         </div>
         <div className="container-fluid col-padding-0 pb-40">
