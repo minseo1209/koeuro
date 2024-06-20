@@ -14,9 +14,13 @@ const ContactDetail = () => {
             <tr key={index}>
               <th>{item.label}</th>
               <td>
-                {item.text.split('\n').map((line, lineIndex) => (
-                  <div key={lineIndex}>{line}</div>
-                ))}
+                {item.label === '지원방법' ? (
+                  <div dangerouslySetInnerHTML={{ __html: item.text }} />
+                ) : (
+                  item.text
+                    .split('\n')
+                    .map((line, lineIndex) => <div key={lineIndex}>{line}</div>)
+                )}
               </td>
             </tr>
           ))}

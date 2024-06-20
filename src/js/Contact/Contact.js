@@ -24,7 +24,10 @@ const contact = [
             label: '우대사항',
             text: '- 디자인 경력자\n- 컴퓨터 활용능력 중급 이상 엑셀 워드 파워포인트 등 활용 가능자',
           },
-          { label: '지원방법', text: '이메일 접수' },
+          {
+            label: '지원방법',
+            text: `<a href='https://www.jobkorea.co.kr/Recruit/GI_Read/44690198?Oem_Code=C1'>잡코리아 이력서 접수</a>`,
+          },
           { label: '전형절차', text: '서류전형 > 면접전형 > 최종합격' },
           {
             label: '근무조건',
@@ -54,7 +57,46 @@ const contact = [
             label: '우대사항',
             text: '- 운전 면허 소지자\n- 영어 회화 가능자\n- 컴퓨터 활용능력 초급이상 (엑셀,한글,파워포인트 등)\n- 총무파트 유경험자',
           },
-          { label: '지원방법', text: '잡코리아 이력서 접수' },
+          {
+            label: '지원방법',
+            text: `<a href='https://www.jobkorea.co.kr/Recruit/GI_Read/44741777?Oem_Code=C1&PageGbn=ST'>잡코리아 이력서 접수</a>`,
+          },
+          { label: '전형절차', text: '서류전형 > 면접전형 > 최종합격' },
+          {
+            label: '근무조건',
+            text: '주 5일 근무 (09:00 - 18:00)\n* 법정 공휴일 휴무, 휴게시간 1시간',
+          },
+          { label: '회사위치', text: '경기도 오산시 대원로39번길 24 3층' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: '온라인 쇼핑 및 광고대행 마케터 모집',
+    day: '24.06.18',
+    state: '채용중',
+    content: [
+      {
+        type: 'table',
+        value: [
+          {
+            label: '모집부분',
+            text: '마케팅 / 광고 / 홍보 / 상품기획 / 사무원',
+          },
+          {
+            label: '담당업무',
+            text: '- 고객대응 및 홍보\n- 브랜딩 & 마케팅 기획 및 전략 수립\n- 브랜딩 & 마케팅 진행\n- 진행사항 레포트 및 공유\n- 컨텐츠 기획\n- 판매계획 수립',
+          },
+          { label: '지원자격', text: '경력 2년 이상' },
+          {
+            label: '우대사항',
+            text: '- ',
+          },
+          {
+            label: '지원방법',
+            text: `<a href='https://www.work.go.kr/empInfo/empInfoSrch/detail/empDetailAuthView.do?searchInfoType=VALIDATION&callPage=detail&wantedAuthNo=K151732406180007&rtnUrl=/empInfo/empInfoSrch/list/dtlEmpSrchList.do'>워크넷 이력서 접수</a>`,
+          },
           { label: '전형절차', text: '서류전형 > 면접전형 > 최종합격' },
           {
             label: '근무조건',
