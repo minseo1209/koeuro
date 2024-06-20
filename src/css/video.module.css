@@ -37,11 +37,6 @@
   color: white;
 }
 
-.videoContent > h1,
-.videoContent > h4 {
-  text-align: left;
-}
-
 /* wave */
 .waveOpacity {
   position: absolute;

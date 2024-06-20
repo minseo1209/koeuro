@@ -606,7 +606,18 @@ textarea {
 }
 
 /* footer */
-.footersub {
+.footerContents {
+  color: #9b9b9b;
+  text-align: left;
+  height: 55px;
+}
+
+.footerContents:hover .footerSub:not(:last-child)::after {
+  color: #9b9b9b;
+  font-weight: 100;
+}
+
+.footerSub {
   color: #9b9b9b;
   text-align: left;
   font-size: 13px;
@@ -614,15 +625,14 @@ textarea {
   transition: all 0.3s;
 }
 
-.footersub:hover {
+.footerSub:hover {
   color: white;
   font-weight: 600;
 }
 
-.footercontents {
-  color: #9b9b9b;
-  text-align: left;
-  height: 55px;
+.footerSub:not(:last-child)::after {
+  content: '|';
+  margin-left: 10px;
 }
 
 .footerNav {
@@ -630,20 +640,10 @@ textarea {
   font-weight: 700;
 }
 
-.subfooter {
+.subFooter {
   color: #9b9b9b;
   margin-top: 30px;
   font-weight: 300;
-}
-
-.footersub:not(:last-child)::after {
-  content: '|';
-  margin-left: 10px;
-}
-
-.footercontents:hover .footersub:not(:last-child)::after {
-  color: #9b9b9b;
-  font-weight: 100;
 }
 
 .footerImg {

@@ -76,6 +76,7 @@ function Main() {
     <div style={{ overflowX: 'scroll' }}>
       <div className="mt-5">
         <main>
+          {/* 메인페이지 배너 */}
           <section className={videoStyles.videoSection}>
             <div className={videoStyles.videoContainer}>
               <video
@@ -118,37 +119,41 @@ function Main() {
                 </svg>
               </div>
             </div>
-            <div className="buttons">
+            <div className={styles.buttons}>
               <button onClick={prevVideo}>
-                <span className="directionPrev">Prev</span>
+                <span className={styles.directionPrev}>Prev</span>
               </button>
               <button onClick={nextVideo}>
-                <span className="directionNext">Next</span>
+                <span className={styles.directionNext}>Next</span>
               </button>
             </div>
           </section>
-          <div className="empty"></div>
+
+          {/* 메인페이지 컨텐츠 */}
+          <div className={styles.empty}></div>
           <DevelopingComponent />
           <Brand />
-          <div className="empty"></div>
+          <div className={styles.empty}></div>
           <Koeuro />
-          <div className="empty"></div>
+          <div className={styles.empty}></div>
           <Customer />
-          <div className="empty"></div>
+          <div className={styles.empty}></div>
           <Partners />
-          <div className="empty" style={{ height: '50px' }}></div>
+          <div className={styles.empty} style={{ height: '50px' }}></div>
         </main>
       </div>
+
+      {/* Footer */}
       <footer className="bg-dark text-white py-4">
         <div className="container-fluid d-flex justify-content-center align-items-center">
-          <div className="footercontents">
-            <a className="footersub" href="#">
+          <div className={styles.footerContents}>
+            <a className={styles.footerSub} href="#">
               이용약관
             </a>
-            <a className="footersub" href="#">
+            <a className={styles.footerSub} href="#">
               개인정보 처리 방침
             </a>
-            <a className="footersub" href="#">
+            <a className={styles.footerSub} href="#">
               콘텐츠 산업 진흥법에 따른 표기
             </a>
           </div>
@@ -156,19 +161,19 @@ function Main() {
         <div className="container-fluid d-flex justify-content-center align-items-center">
           <Nav className="gap-4 text-center">
             <Nav.Link href="#" className="text-decoration-none text-white">
-              <div className="footerNav">
+              <div className={styles.footerNav}>
                 Contact
                 <br />
                 <div style={{ height: '15px' }}></div>
-                <span className="subfooter">E : Koeuro@koeuro.com</span>
+                <span className={styles.subFooter}>E : Koeuro@koeuro.com</span>
               </div>
             </Nav.Link>
             <Nav.Link href="#" className="text-decoration-none text-white">
-              <div className="footerNav">
+              <div className={styles.footerNav}>
                 Poland Office
                 <br />
                 <div style={{ height: '15px' }}></div>
-                <span className="subfooter">
+                <span className={styles.subFooter}>
                   ul. Stanis awa Dubois 36, 44-100
                   <br />
                   Gliwice, Poland
@@ -176,11 +181,11 @@ function Main() {
               </div>
             </Nav.Link>
             <Nav.Link href="#" className="text-decoration-none text-white">
-              <div className="footerNav">
+              <div className={styles.footerNav}>
                 Korea Office
                 <br />
                 <div style={{ height: '15px' }}></div>
-                <span className="subfooter">
+                <span className={styles.subFooter}>
                   24, Daewon-ro 39beon-gil, Osan-si,
                   <br />
                   Gyeonggi-do, Republic of korea
@@ -188,18 +193,18 @@ function Main() {
               </div>
             </Nav.Link>
             <Nav.Link href="#" className="text-decoration-none text-white">
-              <div className="footerNav">
+              <div className={styles.footerNav}>
                 Social
                 <br />
                 <div style={{ height: '15px' }}></div>
-                <span className="subfooter">
-                  <img src="../assets/images/icon/free-icon-facebook-3128208.png" className="footerImg" />
+                <span className={styles.subFooter}>
+                  <img src="../assets/images/icon/free-icon-facebook-3128208.png" className={styles.footerImg} />
                 </span>
-                <span className="subfooter">
-                  <img src="../assets/images/icon/free-icon-instagram-717392.png" className="footerImg" />
+                <span className={styles.subFooter}>
+                  <img src="../assets/images/icon/free-icon-instagram-717392.png" className={styles.footerImg} />
                 </span>
-                <span className="subfooter">
-                  <img src="../assets/images/icon/free-icon-youtube-152810.png" className="footerImg" />
+                <span className={styles.subFooter}>
+                  <img src="../assets/images/icon/free-icon-youtube-152810.png" className={styles.footerImg} />
                 </span>
               </div>
             </Nav.Link>
