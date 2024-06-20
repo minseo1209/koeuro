@@ -73,6 +73,9 @@ function Main() {
     }
     changeVideo(nextIndex);
   };
+  const goToUrl = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <div>
@@ -194,31 +197,52 @@ function Main() {
                 </span>
               </div>
             </Nav.Link>
-            <Nav.Link href="#" className="text-decoration-none text-white">
+            <div className="text-decoration-none text-white">
               <div className={styles.footerNav}>
                 Social
                 <br />
                 <div style={{ height: '15px' }}></div>
                 <span className={styles.subFooter}>
-                  <img
-                    src="../assets/images/icon/free-icon-facebook-3128208.png"
-                    className={styles.footerImg}
-                  />
+                  <button
+                    onClick={() =>
+                      goToUrl(
+                        'https://www.facebook.com/people/Koeuro/61553874607457'
+                      )
+                    }
+                    className={styles.footerBtn}
+                  >
+                    <img
+                      src="../assets/images/icon/free-icon-facebook-3128208.png"
+                      className={styles.footerImg}
+                    />
+                  </button>
                 </span>
                 <span className={styles.subFooter}>
-                  <img
-                    src="../assets/images/icon/free-icon-instagram-717392.png"
-                    className={styles.footerImg}
-                  />
+                  <button
+                    onClick={() =>
+                      goToUrl('https://www.instagram.com/koeuro.shop/')
+                    }
+                    className={styles.footerBtn}
+                  >
+                    <img
+                      src="../assets/images/icon/free-icon-instagram-717392.png"
+                      className={styles.footerImg}
+                    />
+                  </button>
                 </span>
                 <span className={styles.subFooter}>
-                  <img
-                    src="../assets/images/icon/free-icon-youtube-152810.png"
-                    className={styles.footerImg}
-                  />
+                  <button
+                    onClick={() => goToUrl('https://www.youtube.com/@koeuro')}
+                    className={styles.footerBtn}
+                  >
+                    <img
+                      src="../assets/images/icon/free-icon-youtube-152810.png"
+                      className={styles.footerImg}
+                    />
+                  </button>
                 </span>
               </div>
-            </Nav.Link>
+            </div>
           </Nav>
         </div>
         <div style={{ marginTop: '50px' }}>

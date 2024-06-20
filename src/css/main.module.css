@@ -653,6 +653,10 @@ textarea {
   margin-right: 15px;
   filter: invert(100%);
 }
+.footerBtn {
+  background-color: #212529;
+  border: none;
+}
 /* footer END */
 
 @keyframes blink-animation {
