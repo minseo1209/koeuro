@@ -29,16 +29,16 @@ function DevelopingComponent() {
   return (
     <section className={'py-5 developing_textwrap'}>
       <div className={`developing_text ${isVisible ? aniStyles.appearFromBottom : ''}`}>
-        <h2 className="Koeuro">코유로 &#40;KOEURO&#41;</h2>
+        <h2 className={styles.koeuroTitle}>코유로 &#40;KOEURO&#41;</h2>
 
-        <h4 className={styles.Koeurosubtitle}>
+        <h4 className={styles.koeurosubtitle}>
           한국&#40;Koera&#41;과 유럽&#40;Europe&#41;간의 링크를 상징하는 이름입니다.
         </h4>
         <img
           src="../assets/images/logo/KoeuroLink.png"
-          className={`${styles.KoeuroLink} blinking ${isVisible ? aniStyles.appearFromBottom : ''}`}
+          className={`${styles.koeuroLink} blinking ${isVisible ? aniStyles.appearFromBottom : ''}`}
         ></img>
-        <div className={styles.KoeuroExplanation}>
+        <div className={styles.koeuroExplanation}>
           <p style={{ marginTop: '-75px' }}>
             우리는 현지에 회사를 운영하고 있어 유럽 제품에 빠른 접근성과 인프라를 가지고 있습니다.
             <br />

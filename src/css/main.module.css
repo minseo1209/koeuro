@@ -116,10 +116,6 @@ ul {
   padding-right: 20px;
 }
 
-.Koeuro {
-  font-weight: bold;
-}
-
 .KOEURONAME {
   font-weight: bold;
 }
@@ -154,19 +150,23 @@ ul {
 }
 
 /* DevelopingComponent */
-.Koeurosubtitle {
+.koeuroTitle {
+  font-weight: bold;
+}
+
+.koeurosubtitle {
   margin-top: 50px;
   font-weight: 600;
   font-size: 20px;
   margin-bottom: -95px;
 }
 
-.KoeuroExplanation {
+.koeuroExplanation {
   position: relative;
   font-size: 20px;
 }
 
-.KoeuroLink {
+.koeuroLink {
   height: 350px;
   opacity: 0.1;
   transform: rotate(-65deg);
