@@ -11,3 +11,6 @@
     opacity: 1;
   }
 }
+.rotate45 {
+  transform: rotate(45deg);
+}
