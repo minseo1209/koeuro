@@ -6,7 +6,7 @@ const contact = [
     id: 1,
     title: '웹 디자이너 인원 모집',
     day: '24.04.09',
-    state: '채용중',
+    state: '채용 마감',
     content: [
       {
         type: 'table',
