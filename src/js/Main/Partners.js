@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import styles from '../../css/main.module.css';
+
 // 메인용 코유로 파트너 안내
 
 const Client = [
@@ -71,12 +73,12 @@ function ClientSlide({ startIdx }) {
 function Partner({ title, imgSrc, name, position }) {
   return (
     <div>
-      <table className="exordiumTable">
+      <table className={styles.exordiumTable}>
         <tr>
-          <th className="exordiumTitle">{title}</th>
+          <th className={styles.exordiumTitle}>{title}</th>
         </tr>
       </table>
-      <table className="exordiumTable">
+      <table className={styles.exordiumTable}>
         <tr>
           <th className="exordiumImg" id="partnerImg">
             <img src={imgSrc} alt="Partner" className="partnerImg" />
@@ -154,55 +156,56 @@ function Partners() {
 
   return (
     <div>
-      <h2 className="Partners">Our happy Partners</h2>
+      <h2 className={styles.partnersTitle}>Our happy Partners</h2>
       <div>
-        <img src="../assets/images/backgrounds/line_bg4.png" className="PartnersImg" />
+        <img src="../assets/images/backgrounds/line_bg4.png" className={styles.partnersImg} />
         <Partner {...partners[currentPartnerIndex]} />
       </div>
       {/* <div>
         <button onClick={prevPartner}>Previous</button>
         <button onClick={nextPartner}>Next</button>
       </div> */}
-      <div className="slideContainer">
-        <div className="client-slide-box">
-          <div className="slideImgBox">
+      <div className={styles.slideContainer}>
+        <div className={styles.clientSlideBox}>
+          <div className={styles.slideImgBox}>
             <ClientSlide startIdx={0} />
           </div>
         </div>
       </div>
+
       {/* Social */}
       <div style={{ marginTop: '100px' }}>
-        <table className="social">
+        <table className={styles.social}>
           <tr>
-            <th className="socialTh">
-              <div className="socialInterval">
-                <img src="../assets/images/icon/free-icon-facebook-3128208.png" className="iconSocial" />
-                <button className="socialBtn" onClick={FaceBook}>
-                  <div className="SocialTitle">
+            <th className={styles.socialTh}>
+              <div className={styles.socialInterval}>
+                <img src="../assets/images/icon/free-icon-facebook-3128208.png" className={styles.iconSocial} />
+                <button className={styles.socialBtn} onClick={FaceBook}>
+                  <div className={styles.socialTitle}>
                     Facebook <br />
-                    <span className="subSocial">Follow us now @ KOEURO</span>
+                    <span className={styles.subSocial}>Follow us now @ KOEURO</span>
                   </div>
                 </button>
               </div>
             </th>
-            <th className="socialTh">
-              <div className="socialInterval">
-                <img src="../assets/images/icon/free-icon-instagram-717392.png" className="iconSocial" />
-                <button className="socialBtn" onClick={instargram}>
-                  <div className="SocialTitle">
+            <th className={styles.socialTh}>
+              <div className={styles.socialInterval}>
+                <img src="../assets/images/icon/free-icon-instagram-717392.png" className={styles.iconSocial} />
+                <button className={styles.socialBtn} onClick={instargram}>
+                  <div className={styles.socialTitle}>
                     instargram <br />
-                    <span className="subSocial">Follow us now @ koeuro.shop</span>
+                    <span className={styles.subSocial}>Follow us now @ koeuro.shop</span>
                   </div>
                 </button>
               </div>
             </th>
-            <th className="socialTh">
-              <div className="socialInterval">
-                <img src="../assets/images/icon/free-icon-youtube-152810.png" className="iconSocial" />
-                <button className="socialBtn" onClick={Youtube}>
-                  <div className="SocialTitle">
+            <th className={styles.socialTh}>
+              <div className={styles.socialInterval}>
+                <img src="../assets/images/icon/free-icon-youtube-152810.png" className={styles.iconSocial} />
+                <button className={styles.socialBtn} onClick={Youtube}>
+                  <div className={styles.socialTitle}>
                     Youtube <br />
-                    <span className="subSocial">Follow us now @ KOEURO</span>
+                    <span className={styles.subSocial}>Follow us now @ KOEURO</span>
                   </div>
                 </button>
               </div>
@@ -210,22 +213,24 @@ function Partners() {
           </tr>
         </table>
       </div>
+
+      {/* Question */}
       <div class="container" style={{ height: '600px' }}>
-        <img src="../assets/images/backgrounds/line_bg5.png" className="helpImg" />
+        <img src="../assets/images/backgrounds/line_bg5.png" className={styles.helpImg} />
         <div class="row">
           <div class="col">
             <table>
               <tr>
-                <th rowSpan={3} className="helpTable">
+                <th rowSpan={3} className={styles.helpTable}>
                   <br />{' '}
                 </th>
-                <th className="subHelpTitle">Please take a moment to fill out the form.</th>
+                <th className={styles.subHelpTitle}>Please take a moment to fill out the form.</th>
               </tr>
               <tr>
-                <th className="mainHelpTitle">질문이나 도움이 필요할 때 언제든지 문의하십시요</th>
+                <th className={styles.mainHelpTitle}>질문이나 도움이 필요할 때 언제든지 문의하십시요</th>
               </tr>
               <tr>
-                <td className="additional">
+                <td className={styles.additional}>
                   우리는 각 작업에 통합적으로 접근하는 것의 중요성을 이해하고 있으며 간단하고 쉬운 의사소통의 힘을
                   믿습니다.
                 </td>
@@ -233,38 +238,39 @@ function Partners() {
             </table>
           </div>
 
+          {/* About */}
           <div class="col">
             <table>
               <tr style={{ height: '30px' }}></tr>
               <tr>
                 <td>
-                  <input placeholder="성명" className="inputBox" />
+                  <input placeholder="성명" className={styles.inputBox} />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <input placeholder="이메일" className="inputBox" />
+                  <input placeholder="이메일" className={styles.inputBox} />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <input placeholder="연락처" className="inputBox" />
+                  <input placeholder="연락처" className={styles.inputBox} />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <textarea placeholder="문의내용" required="true" className="inputBox" />
+                  <textarea placeholder="문의내용" required="true" className={styles.inputBox} />
                 </td>
               </tr>
               <tr>
-                <td className="inquiryTable" id="aboutCheck">
+                <td className={styles.inquiryTable} id="aboutCheck">
                   개인정보 동의
                   <input type="checkbox" style={{ marginLeft: '5px' }} />
                 </td>
               </tr>
               <tr>
-                <td className="inquiryTable">
-                  <button type="submit" className="btn btn__primary">
+                <td className={styles.inquiryTable}>
+                  <button type="submit" className={`${styles.btn} ${styles.btnPrimary}`}>
                     Submit
                   </button>
                 </td>

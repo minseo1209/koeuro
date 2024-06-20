@@ -242,10 +242,40 @@ ul {
 /* Koeuro END */
 
 /* Partner */
-.Partners {
+.partnersTitle {
   text-align: left;
   margin-bottom: 50px;
 }
+
+.partnersImg {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  width: 80%;
+}
+
+/* Slide Container */
+.slideContainer {
+  margin-top: 200px;
+  height: 300px;
+  width: 100%;
+}
+
+.clientSlideBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slideImgBox {
+  display: flex;
+  align-items: center;
+
+  height: 300px;
+  transition: transform 1s ease;
+  margin-top: 50px;
+}
+/* Slide Container -end- */
 
 .exordiumTitle {
   font-size: 25px;
@@ -274,27 +304,6 @@ ul {
   font-size: 14px;
 }
 
-.slideContainer {
-  margin-top: 200px;
-  height: 300px;
-  width: 100%;
-}
-
-.client-slide-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.slideImgBox {
-  display: flex;
-  align-items: center;
-
-  height: 300px;
-  transition: transform 1s ease;
-  margin-top: 50px;
-}
-
 .animate-slide {
   transform: translateX(-215px);
 }
@@ -313,13 +322,6 @@ ul {
   width: 60px;
   border-radius: 70%;
 }
-
-.PartnersImg {
-  position: absolute;
-  width: 100%;
-  right: 0;
-  width: 80%;
-}
 /* Partner END */
 
 /* Social */
@@ -330,8 +332,16 @@ ul {
   text-align: left;
 }
 
+.socialTh {
+  width: 33.33%;
+}
+
 .social table {
   width: 100%;
+}
+
+.socialInterval {
+  width: 333px;
 }
 
 .iconSocial {
@@ -340,31 +350,23 @@ ul {
   opacity: 0.2;
 }
 
-.SocialTitle {
-  margin-left: 38px;
-  padding-top: 7px;
-}
-
 .socialBtn {
   border: none;
   background-color: rgba(255, 255, 255, 0);
   text-align: left;
 }
 
-.socialInterval {
-  width: 333px;
-}
-
 .socialBtn:hover .subSocial {
   font-weight: 700;
 }
 
-.subSocial {
-  font-size: 12px;
+.socialTitle {
+  margin-left: 38px;
+  padding-top: 7px;
 }
 
-.socialTh {
-  width: 33.33%;
+.subSocial {
+  font-size: 12px;
 }
 /* Social END */
 
@@ -426,9 +428,8 @@ ul {
   text-align: left;
 }
 
-.btn__primary {
-  background-color: #1b1a1a;
-  counter-reset: #fff;
+#aboutCheck {
+  font-size: 13px;
 }
 
 .btn {
@@ -455,6 +456,11 @@ ul {
   user-select: none;
 }
 
+.btn:hover {
+  background-color: #1b1a1a;
+  color: white;
+}
+
 .btn::before {
   content: '';
   position: absolute;
@@ -473,13 +479,9 @@ ul {
   left: 100%;
 }
 
-.btn:hover {
+.btnPrimary {
   background-color: #1b1a1a;
-  color: white;
-}
-
-#aboutCheck {
-  font-size: 13px;
+  counter-reset: #fff;
 }
 
 textarea {
