@@ -138,7 +138,7 @@ function Partners() {
 
     const slideImgBox = document.querySelector('.slideImgBox');
     if (slideImgBox) {
-      slideImgBox.classList.add('animate-slide');
+      slideImgBox.classList.add('animateSlide');
     }
   };
   function FaceBook() {
@@ -155,7 +155,7 @@ function Partners() {
   }
 
   return (
-    <div>
+    <div className="px-5">
       <h2 className={styles.partnersTitle}>Our happy Partners</h2>
       <div>
         <img src="../assets/images/backgrounds/line_bg4.png" className={styles.partnersImg} />
@@ -174,44 +174,28 @@ function Partners() {
       </div>
 
       {/* Social */}
-      <div style={{ marginTop: '100px' }}>
-        <table className={styles.social}>
-          <tr>
-            <th className={styles.socialTh}>
-              <div className={styles.socialInterval}>
-                <img src="../assets/images/icon/free-icon-facebook-3128208.png" className={styles.iconSocial} />
-                <button className={styles.socialBtn} onClick={FaceBook}>
-                  <div className={styles.socialTitle}>
-                    Facebook <br />
-                    <span className={styles.subSocial}>Follow us now @ KOEURO</span>
-                  </div>
-                </button>
-              </div>
-            </th>
-            <th className={styles.socialTh}>
-              <div className={styles.socialInterval}>
-                <img src="../assets/images/icon/free-icon-instagram-717392.png" className={styles.iconSocial} />
-                <button className={styles.socialBtn} onClick={instargram}>
-                  <div className={styles.socialTitle}>
-                    instargram <br />
-                    <span className={styles.subSocial}>Follow us now @ koeuro.shop</span>
-                  </div>
-                </button>
-              </div>
-            </th>
-            <th className={styles.socialTh}>
-              <div className={styles.socialInterval}>
-                <img src="../assets/images/icon/free-icon-youtube-152810.png" className={styles.iconSocial} />
-                <button className={styles.socialBtn} onClick={Youtube}>
-                  <div className={styles.socialTitle}>
-                    Youtube <br />
-                    <span className={styles.subSocial}>Follow us now @ KOEURO</span>
-                  </div>
-                </button>
-              </div>
-            </th>
-          </tr>
-        </table>
+      <div className={styles.socialContainer}>
+        <div className={styles.socialInterval}>
+          <button className={styles.socialBtn} onClick={FaceBook}>
+            <img src="../assets/images/icon/free-icon-facebook-3128208.png" className={styles.socialIcon} />
+            <div className={styles.socialTitle}>Facebook</div>
+            <span className={styles.socialSubTitle}>Follow us now @ KOEURO</span>
+          </button>
+        </div>
+        <div className={styles.socialInterval}>
+          <button className={styles.socialBtn} onClick={instargram}>
+            <img src="../assets/images/icon/free-icon-instagram-717392.png" className={styles.socialIcon} />
+            <div className={styles.socialTitle}>instargram</div>
+            <span className={styles.socialSubTitle}>Follow us now @ koeuro.shop</span>
+          </button>
+        </div>
+        <div className={styles.socialInterval}>
+          <button className={styles.socialBtn} onClick={Youtube}>
+            <img src="../assets/images/icon/free-icon-youtube-152810.png" className={styles.socialIcon} />
+            <div className={styles.socialTitle}>Youtube</div>
+            <span className={styles.socialSubTitle}>Follow us now @ KOEURO</span>
+          </button>
+        </div>
       </div>
 
       {/* Question */}

@@ -274,7 +274,7 @@ ul {
   align-items: center;
 
   height: 300px;
-  transition: transform 1s ease;
+  transition: transform 3s ease;
   margin-top: 50px;
 }
 /* Slide Container -end- */
@@ -306,11 +306,11 @@ ul {
   font-size: 14px;
 }
 
-.animate-slide {
+.animateSlide {
   transform: translateX(-215px);
 }
 
-.client-slide-box img {
+.clientSlideBox img {
   max-width: 215px;
   height: auto;
   margin: 15px;
@@ -327,47 +327,40 @@ ul {
 /* Partner END */
 
 /* Social */
-.social {
-  margin: 250px;
-  /* margin: 0 auto; */
-  width: 50%;
-  text-align: left;
-}
-
-.socialTh {
-  width: 33.33%;
-}
-
-.social table {
-  width: 100%;
+.socialContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 7rem 0;
+  padding: 0 3rem;
 }
 
 .socialInterval {
-  width: 333px;
-}
-
-.iconSocial {
-  width: 60px;
-  position: absolute;
-  opacity: 0.2;
 }
 
 .socialBtn {
+  width: 200px;
+  height: 60px;
   border: none;
   background-color: rgba(255, 255, 255, 0);
   text-align: left;
 }
 
-.socialBtn:hover .subSocial {
+.socialBtn:hover .socialSubTitle {
   font-weight: 700;
+  /* transition: all 0.3s linear; */
+}
+
+.socialIcon {
+  width: 60px;
+  position: absolute;
+  opacity: 0.2;
 }
 
 .socialTitle {
-  margin-left: 38px;
-  padding-top: 7px;
+  font-weight: 700;
 }
 
-.subSocial {
+.socialSubTitle {
   font-size: 12px;
 }
 /* Social END */
