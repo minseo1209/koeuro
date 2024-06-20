@@ -60,14 +60,22 @@ function Brand() {
         <div className={brandStyles.partnerBrandContainer}>
           <div className={brandStyles.partnerBrandTitles}>
             <div className={brandStyles.partnerBrandTitle}>유럽의 명품을</div>
-            <img src="../assets/images/logo/logo_o.png" className={brandStyles.titleImg} alt="유럽의 명품" />
+            <div className={brandStyles.logoContainer}>
+              <img src="../assets/images/logo/logo_o.png" className={brandStyles.titleImg} alt="유럽의 명품" />
+              {/* <img
+                src="../assets/images/logo/KoeuroLink.png"
+                className={`${brandStyles.koeuroLink} ${
+                  isVisible ? aniStyles.rotationFromBottom && brandStyles.play : brandStyles.stop
+                }`}
+              ></img> */}
+              <img
+                src="../assets/images/logo/KoeuroLink.png"
+                className={`${brandStyles.koeuroLink} ${
+                  isVisible ? aniStyles.rotationFromBottom && aniStyles.play : ''
+                }`}
+              ></img>
+            </div>
             <div className={brandStyles.partnerBrandTitle}>에서 만나보세요</div>
-            <img
-              src="../assets/images/logo/KoeuroLink.png"
-              className={`${brandStyles.koeuroLink} ${aniStyles.rotate45} ${
-                isVisible ? aniStyles.rotationFromBottom : ''
-              }`}
-            ></img>
           </div>
           <div className={brandStyles.brandsContainer}></div>
         </div>

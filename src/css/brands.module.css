@@ -74,14 +74,26 @@ a {
   font-weight: bold;
 }
 
-.titleImg {
+.logoContainer {
   width: 70px;
-  margin-right: 14px; /* 이미지 너비 조절 */
+  height: max-content;
+  position: relative;
+}
+
+.titleImg {
+  width: 100%;
 }
 
 .koeuroLink {
-  height: 350px;
+  height: 32.66px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.koeuroLink.play {
   opacity: 0.1;
+  transform: translateY(-200px) scale(10) rotate(45deg);
 }
 /* Partner Brand Titles -end- */
 
