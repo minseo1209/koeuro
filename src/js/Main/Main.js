@@ -135,8 +135,8 @@ function Main() {
           <Brand />
           <div className={styles.empty}></div>
           <Koeuro />
-          <div className={styles.empty}></div>
-          <Customer />
+          {/* <div className={styles.empty}></div>
+          <Customer /> */}
           <div className={styles.empty}></div>
           <Partners />
           <div className={styles.empty} style={{ height: '50px' }}></div>
