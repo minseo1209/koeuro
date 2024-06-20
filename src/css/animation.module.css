@@ -1,5 +1,5 @@
 .rotationFromBottom {
-  animation: rotationFromBottom ease 5s;
+  animation: rotationFromBottom ease 5s forwards;
 }
 
 @keyframes rotationFromBottom {
@@ -15,7 +15,7 @@
 }
 
 .appearFromBottom {
-  animation: appearFromBottom ease 1.5s;
+  animation: appearFromBottom ease 1.5s forwards;
 }
 
 @keyframes appearFromBottom {
