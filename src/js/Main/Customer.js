@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import '../../css/brands.module.css';
+
+import styles from '../../css/main.module.css';
+import brandStyles from '../../css/brands.module.css';
 
 // 메인용 고객 문의 안내
 
@@ -36,36 +38,36 @@ function Customer() {
 
   return (
     <section>
-      <div className="partner-brand-container">
-        <div className="partner-brand-container">
-          <div className="partner-brand-titles">
-            <div className="partner-brand-title">고객 만족 실현을</div>
-            <img src="../assets/images/logo/logo_o.png" className="titleimg" alt="유럽의 명품" />
-            <div className="partner-brand-title">에서 만나보세요</div>
+      <div className={brandStyles.partnerBrandContainer}>
+        <div className={brandStyles.partnerBrandContainer}>
+          <div className={brandStyles.partnerBrandTitles}>
+            <div className={brandStyles.partnerBrandTitle}>고객 만족 실현을</div>
+            <img src="../assets/images/logo/logo_o.png" className={brandStyles.titleImg} alt="유럽의 명품" />
+            <div className={brandStyles.partnerBrandTitle}>에서 만나보세요</div>
           </div>
-          <div className="brands-container"></div>
+          <div className={brandStyles.brandsContainer}></div>
         </div>
-        <div className="brands-container">
-          <div className="brands-grid">
+        <div className={brandStyles.brandsContainer}>
+          <div className={brandStyles.brandsGrid}>
             {brands.map((brand, index) => (
-              <div className="b-card">
-                <div className="brand-card-content">
-                  <h className="brand-name">{brand.name}</h>
-                  <p className="brand-description" style={{ fontSize: '14px' }}>
+              <div className={brandStyles.bCard}>
+                <div className={brandStyles.brandCardContent}>
+                  <h className={brandStyles.brandName}>{brand.name}</h>
+                  <p className={brandStyles.brandDescription} style={{ fontSize: '14px' }}>
                     {brand.description}
                   </p>
-                  <ul key={index} className="List" style={{ margin: '0', padding: '0', fontSize: '11px' }}>
-                    <li className="Listli">
+                  <ul key={index} className={styles.ulList} style={{ margin: '0', padding: '0', fontSize: '11px' }}>
+                    <li className={styles.liList}>
                       <a href={brand.href1} target="_blank">
                         {brand.link1}
                       </a>
                     </li>
-                    <li className="Listli">
+                    <li className={styles.liList}>
                       <a href={brand.href2} target="_blank">
                         {brand.link2}
                       </a>
                     </li>
-                    <li className="Listli">
+                    <li className={styles.liList}>
                       <a href={brand.href3} target="_blank">
                         {brand.link3}
                       </a>

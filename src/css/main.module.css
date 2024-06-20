@@ -174,13 +174,17 @@ ul {
 /* DevelopingComponent END*/
 
 /* Customer */
-.List {
+.ulList {
   text-align: left;
   font-size: 14px;
 }
 
-.Listli {
+.liList {
   margin-bottom: 20px;
+}
+
+.liList:hover {
+  font-weight: 600;
 }
 /* Customer END */
 
