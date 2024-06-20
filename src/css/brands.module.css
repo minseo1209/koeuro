@@ -78,6 +78,11 @@ a {
   width: 70px;
   margin-right: 14px; /* 이미지 너비 조절 */
 }
+
+.koeuroLink {
+  height: 350px;
+  opacity: 0.1;
+}
 /* Partner Brand Titles -end- */
 
 /* Brnads Container */

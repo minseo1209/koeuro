@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
+import { useEffect, useState } from 'react';
+
+import styles from '../../css/main.module.css';
 import brandStyles from '../../css/brands.module.css';
+import aniStyles from '../../css/animation.module.css';
 
 // 메인용 코유로 브랜드 안내
 
@@ -30,15 +33,41 @@ function Brand() {
 
   // 이미지 변경을 위한 상태 변수
   const [hoveredBrand, setHoveredBrand] = useState(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const textWrap = document.querySelector('.developing_textwrap');
+      const positionFromTop = textWrap.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (positionFromTop - windowHeight <= 0) {
+        setIsVisible(true);
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <section>
+    <section className="developing_textwrap">
       <div className={brandStyles.partnerBrandContainer}>
         <div className={brandStyles.partnerBrandContainer}>
           <div className={brandStyles.partnerBrandTitles}>
             <div className={brandStyles.partnerBrandTitle}>유럽의 명품을</div>
             <img src="../assets/images/logo/logo_o.png" className={brandStyles.titleImg} alt="유럽의 명품" />
             <div className={brandStyles.partnerBrandTitle}>에서 만나보세요</div>
+            <img
+              src="../assets/images/logo/KoeuroLink.png"
+              className={`${brandStyles.koeuroLink} ${aniStyles.rotate45} ${
+                isVisible ? aniStyles.rotationFromBottom : ''
+              }`}
+            ></img>
           </div>
           <div className={brandStyles.brandsContainer}></div>
         </div>
