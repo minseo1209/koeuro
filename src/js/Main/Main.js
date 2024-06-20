@@ -33,7 +33,9 @@ function Main() {
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [currentVideoText, setCurrentVideoText] = useState(videoTexts[0]);
-  const [currentVideoSubText, setCurrentVideoSubText] = useState(videoSubTexts[0]);
+  const [currentVideoSubText, setCurrentVideoSubText] = useState(
+    videoSubTexts[0]
+  );
 
   // 비디오 전환을 위한 함수
   const changeVideo = (nextIndex) => {
@@ -73,7 +75,7 @@ function Main() {
   };
 
   return (
-    <div style={{ overflowX: 'scroll' }}>
+    <div>
       <div className="mt-5">
         <main>
           {/* 메인페이지 배너 */}
@@ -198,13 +200,22 @@ function Main() {
                 <br />
                 <div style={{ height: '15px' }}></div>
                 <span className={styles.subFooter}>
-                  <img src="../assets/images/icon/free-icon-facebook-3128208.png" className={styles.footerImg} />
+                  <img
+                    src="../assets/images/icon/free-icon-facebook-3128208.png"
+                    className={styles.footerImg}
+                  />
                 </span>
                 <span className={styles.subFooter}>
-                  <img src="../assets/images/icon/free-icon-instagram-717392.png" className={styles.footerImg} />
+                  <img
+                    src="../assets/images/icon/free-icon-instagram-717392.png"
+                    className={styles.footerImg}
+                  />
                 </span>
                 <span className={styles.subFooter}>
-                  <img src="../assets/images/icon/free-icon-youtube-152810.png" className={styles.footerImg} />
+                  <img
+                    src="../assets/images/icon/free-icon-youtube-152810.png"
+                    className={styles.footerImg}
+                  />
                 </span>
               </div>
             </Nav.Link>
