@@ -185,9 +185,13 @@ ul {
 /* Customer END */
 
 /* Koeuro  */
-.banner-layout1 {
+.bannerLayoutFist {
   position: relative;
   overflow: hidden;
+}
+
+.bannerLayoutFist:hover .thinkingImg {
+  transform: translateY(-10%);
 }
 
 .thinking {
@@ -205,11 +209,7 @@ ul {
   transition: transform 0.3s ease;
 }
 
-.banner-layout1:hover .thinkingImg {
-  transform: translateY(-10%);
-}
-
-.white-box {
+.whiteBox {
   background-color: white;
   margin: 200px 600px;
   width: 700px;
@@ -222,13 +222,13 @@ ul {
   font-weight: 600;
 }
 
-.vision-text-box {
+.visionTextBox {
   width: 50%; /* 화면 가로 비율의 약 50%로 설정 */
   height: 300px;
 }
 
-.vision-text-box .vision-text-title,
-.vision-text-box .vision-text-content {
+.visionTextBox .visionTextTitle,
+.visionTextBox .visionTextContent {
   color: black; /* 텍스트 색상 */
   font-size: 20px;
   font-weight: 900;
