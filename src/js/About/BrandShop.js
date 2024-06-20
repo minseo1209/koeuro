@@ -44,10 +44,6 @@ function BrandShop() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log(
-          '관찰 대상 엘리먼트:',
-          entries.map((entry) => entry.target)
-        );
         entries.forEach((entry) => {
           if (
             entry.isIntersecting &&
