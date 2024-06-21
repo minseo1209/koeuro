@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Nav } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 
 import styles from '../../css/main.module.css';

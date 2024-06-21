@@ -4,11 +4,6 @@ import '../../css/about.module.css';
 function BrandShop() {
   const brands = [
     {
-      name: '',
-      description: '',
-      img: '',
-    },
-    {
       name: '어린이 용품',
       description:
         '코유로는 유럽에서 검증된 어린이 용품들은 CE와 EN71 인증을 거친 후 한국의 KC 안전 인증을 취득한 제품만을 판매합니다.',
@@ -31,11 +26,6 @@ function BrandShop() {
       description:
         '반려동물은 우리와 함게하는 가족입니다. 코유로는 반려동물을 보호하고 케어하는 것에 의미를 두고 있습니다.',
       img: '../assets/images/icon/brandshop-pet004.png',
-    },
-    {
-      name: '',
-      description: '',
-      img: '',
     },
   ];
 
