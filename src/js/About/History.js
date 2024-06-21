@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from 'react';
 import hutenCss from '../../css/huten.module.css';
 
 function History() {
@@ -8,19 +9,53 @@ function History() {
     '../assets/images/huten/h4.jpg',
     '../assets/images/huten/h5.png',
   ];
+  const leftImages = hutenImg.slice(0, 2);
+  const rightImages = hutenImg.slice(2);
+
+  const containerRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(hutenCss.visible);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const images = containerRef.current.querySelectorAll('img');
+    images.forEach((img) => observer.observe(img));
+
+    return () => {
+      images.forEach((img) => observer.unobserve(img));
+    };
+  }, []);
+
   return (
     <div>
       <h2 className="AboutBrandStory">HutenGroup History</h2>
-      <div className={hutenCss.imageContainer}>
-        {hutenImg.map((hutenImg, index) => (
+      <div className={hutenCss.imageContainer} ref={containerRef}>
+        {leftImages.map((hutenImg, index) => (
           <img
             key={index}
             src={hutenImg}
             alt={`img-${index}`}
-            className={hutenCss.imageItem}
+            className={`${hutenCss.imageItem} ${hutenCss.left}`}
+          />
+        ))}
+        {rightImages.map((hutenImg, index) => (
+          <img
+            key={index + 2}
+            src={hutenImg}
+            alt={`img-${index + 2}`}
+            className={`${hutenCss.imageItem} ${hutenCss.right}`}
           />
         ))}
       </div>
+
       <h2 className="AboutBrandStory"> Business location</h2>
       <img
         src="../assets/images/huten/hutenMap.png"

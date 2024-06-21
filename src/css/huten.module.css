@@ -3,10 +3,29 @@
   justify-content: space-between;
   padding: 20px;
 }
+
 .imageItem {
   width: 18%;
   height: auto;
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
+
+.left {
+  transform: translateX(-100%);
+}
+
+.right {
+  transform: translateX(100%);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .hutenMap {
   width: 100%;
+  height: auto;
 }
