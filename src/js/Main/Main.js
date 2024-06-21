@@ -21,7 +21,7 @@ function Main() {
     '../assets/video/main/main_video03.mp4',
     '../assets/video/main/main_video04.mp4',
   ];
-  const imageURL = '/assets/images/logo/KoeuroLink.png';
+  // const imageURL = '/assets/images/logo/KoeuroLink.png';
   const videoTexts = [' ', '연결', '존중', '설렘', '공유'];
   const videoSubTexts = [
     ' ',
