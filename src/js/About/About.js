@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import BrandShop from './BrandShop';
 import OurValue from './OurValue';
+import HutenHistroy from './History';
 import Vision from './Vision';
 import '../../css/about.module.css';
 
@@ -136,6 +137,7 @@ function About() {
       <OurValue />
       <div className="box"></div>
       <Vision />
+      <HutenHistroy />
     </div>
   );
 }

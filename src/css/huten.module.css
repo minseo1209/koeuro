@@ -1,0 +1,12 @@
+.imageContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.imageItem {
+  width: 18%;
+  height: auto;
+}
+.hutenMap {
+  width: 100%;
+}
