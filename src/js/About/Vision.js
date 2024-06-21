@@ -4,11 +4,6 @@ import '../../css/about.module.css';
 function BrandShop() {
   const brands = [
     {
-      name: '',
-      description: '',
-      img: '',
-    },
-    {
       name: '소비자 최우선 원칙',
       description: 'KOEURO는 소비자 최우선 원칙에서',
       img: '../assets/images/icon/01.png',
@@ -31,11 +26,6 @@ function BrandShop() {
       description: 'KOEURO는 우리에게 이로운',
       img: '../assets/images/icon/04.png',
       description1: '제품을 연결합니다.',
-    },
-    {
-      name: '',
-      description: '',
-      img: '',
     },
   ];
 
