@@ -62,7 +62,11 @@ function ClientSlide({ startIdx }) {
       {Array.from({ length: 4 }).map((_, index) => {
         const clientIndex = (currentIndex + index) % Client.length;
         return (
-          <img key={Client[clientIndex].id} src={Client[clientIndex].imgSrc} alt={`Client ${Client[clientIndex].id}`} />
+          <img
+            key={Client[clientIndex].id}
+            src={Client[clientIndex].imgSrc}
+            alt={`Client ${Client[clientIndex].id}`}
+          />
         );
       })}
     </div>
@@ -98,7 +102,8 @@ function Partners() {
   // 파트너 정보 배열
   const partners = [
     {
-      title: 'KOEURO는 파트너사와 함께 최고의 가치를 위하여 좋은 품질의 제품을 지향 하겠습니다.',
+      title:
+        'KOEURO는 파트너사와 함께 최고의 가치를 위하여 좋은 품질의 제품을 지향 하겠습니다.',
       imgSrc: '../assets/images/blog/author/1.jpg',
       name: 'Gon Jo',
       position: 'HutenGroup General representative, CEO',
@@ -110,7 +115,8 @@ function Partners() {
       position: 'HutenGroup COO',
     },
     {
-      title: '모든 제품은 직접 방문 실사 후 선정이 되며, 더욱 믿을 수 있는 제품을 제공하겠습니다.',
+      title:
+        '모든 제품은 직접 방문 실사 후 선정이 되며, 더욱 믿을 수 있는 제품을 제공하겠습니다.',
       imgSrc: '../assets/images/blog/author/3.jpg',
       name: 'Song, In-seob',
       position: 'KOEURO Team Director',
@@ -134,7 +140,9 @@ function Partners() {
 
   // 이전 파트너 보여주기 함수
   const prevPartner = () => {
-    setCurrentPartnerIndex((prevIndex) => (prevIndex - 1 + partners.length) % partners.length);
+    setCurrentPartnerIndex(
+      (prevIndex) => (prevIndex - 1 + partners.length) % partners.length
+    );
 
     const slideImgBox = document.querySelector('.slideImgBox');
     if (slideImgBox) {
@@ -158,7 +166,10 @@ function Partners() {
     <div className="px-5">
       <h2 className={styles.partnersTitle}>Our happy Partners</h2>
       <div>
-        <img src="../assets/images/backgrounds/line_bg4.png" className={styles.partnersImg} />
+        <img
+          src="../assets/images/backgrounds/line_bg4.png"
+          className={styles.partnersImg}
+        />
         <Partner {...partners[currentPartnerIndex]} />
       </div>
       {/* <div>
@@ -177,46 +188,68 @@ function Partners() {
       <div className={styles.socialContainer}>
         <div className={styles.socialInterval}>
           <button className={styles.socialBtn} onClick={FaceBook}>
-            <img src="../assets/images/icon/free-icon-facebook-3128208.png" className={styles.socialIcon} />
+            <img
+              src="../assets/images/icon/free-icon-facebook-3128208.png"
+              className={styles.socialIcon}
+            />
             <div className={styles.socialTitle}>Facebook</div>
-            <span className={styles.socialSubTitle}>Follow us now @ KOEURO</span>
+            <span className={styles.socialSubTitle}>
+              Follow us now @ KOEURO
+            </span>
           </button>
         </div>
         <div className={styles.socialInterval}>
           <button className={styles.socialBtn} onClick={instargram}>
-            <img src="../assets/images/icon/free-icon-instagram-717392.png" className={styles.socialIcon} />
+            <img
+              src="../assets/images/icon/free-icon-instagram-717392.png"
+              className={styles.socialIcon}
+            />
             <div className={styles.socialTitle}>instargram</div>
-            <span className={styles.socialSubTitle}>Follow us now @ koeuro.shop</span>
+            <span className={styles.socialSubTitle}>
+              Follow us now @ koeuro.shop
+            </span>
           </button>
         </div>
         <div className={styles.socialInterval}>
           <button className={styles.socialBtn} onClick={Youtube}>
-            <img src="../assets/images/icon/free-icon-youtube-152810.png" className={styles.socialIcon} />
+            <img
+              src="../assets/images/icon/free-icon-youtube-152810.png"
+              className={styles.socialIcon}
+            />
             <div className={styles.socialTitle}>Youtube</div>
-            <span className={styles.socialSubTitle}>Follow us now @ KOEURO</span>
+            <span className={styles.socialSubTitle}>
+              Follow us now @ KOEURO
+            </span>
           </button>
         </div>
       </div>
 
       {/* Question */}
       <div class="container" style={{ height: '600px' }}>
-        <img src="../assets/images/backgrounds/line_bg5.png" className={styles.helpImg} />
+        <img
+          src="../assets/images/backgrounds/line_bg5.png"
+          className={styles.helpImg}
+        />
         <div class="row">
           <div class="col">
             <table>
               <tr>
                 <th rowSpan={3} className={styles.helpTable}>
-                  <br />{' '}
+                  <br />
                 </th>
-                <th className={styles.subHelpTitle}>Please take a moment to fill out the form.</th>
+                <th className={styles.subHelpTitle}>
+                  Please take a moment to fill out the form.
+                </th>
               </tr>
               <tr>
-                <th className={styles.mainHelpTitle}>질문이나 도움이 필요할 때 언제든지 문의하십시요</th>
+                <th className={styles.mainHelpTitle}>
+                  질문이나 도움이 필요할 때 언제든지 문의하십시요
+                </th>
               </tr>
               <tr>
                 <td className={styles.additional}>
-                  우리는 각 작업에 통합적으로 접근하는 것의 중요성을 이해하고 있으며 간단하고 쉬운 의사소통의 힘을
-                  믿습니다.
+                  우리는 각 작업에 통합적으로 접근하는 것의 중요성을 이해하고
+                  있으며 간단하고 쉬운 의사소통의 힘을 믿습니다.
                 </td>
               </tr>
             </table>
@@ -243,7 +276,11 @@ function Partners() {
               </tr>
               <tr>
                 <td>
-                  <textarea placeholder="문의내용" required="true" className={styles.inputBox} />
+                  <textarea
+                    placeholder="문의내용"
+                    required="true"
+                    className={styles.inputBox}
+                  />
                 </td>
               </tr>
               <tr>
@@ -254,7 +291,10 @@ function Partners() {
               </tr>
               <tr>
                 <td className={styles.inquiryTable}>
-                  <button type="submit" className={`${styles.btn} ${styles.btnPrimary}`}>
+                  <button
+                    type="submit"
+                    className={`${styles.btn} ${styles.btnPrimary}`}
+                  >
                     Submit
                   </button>
                 </td>
