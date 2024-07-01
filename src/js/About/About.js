@@ -31,24 +31,24 @@ function About() {
 
   return (
     <div className="container mt-5">
-      <div className="main"></div>
-      <h3 className="AboutTitle">
+      <div className={about.main}></div>
+      <h3 className={about.AboutTitle}>
         Beautiful design and specialty are added to my daily life to enrich my
         daily life
       </h3>
-      <h2 className="AboutBrandStory">
+      <h2 className={about.AboutBrandStory}>
         아름다운 디자인과 특별함이 일상에 더해져 일상을 풍요롭게 해줍니다.
       </h2>
       <div className="row">
         <div className="col">
           <img
             src="../assets/images/banner/1.png"
-            className="AboutBanner"
+            className={about.AboutBanner}
             alt="About banner"
           />
         </div>
         <div className="col">
-          <div className={about.BrandStor} y ref={brandStoryRef}>
+          <div className={about.BrandStor} ref={brandStoryRef}>
             <h2 className={about.BrandStorytext}>Brand Story</h2>
             <div className={about.BrandStorydetail}>
               <p>
@@ -118,7 +118,7 @@ function About() {
           </div>
         </div>
       </div>
-      <h3 className={about.AboutTitle}></h3>
+      <h3 className={about.AboutTitle}>&nbsp;</h3>
       <h2 className={about.AboutBrandStory}>
         Our Mission
         <span className={about.koeuromallLink}>

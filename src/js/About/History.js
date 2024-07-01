@@ -37,7 +37,7 @@ function History() {
 
   return (
     <div>
-      <h3 className={about.AboutTitle}></h3>
+      <h3 className={about.AboutTitle}>&nbsp;</h3>
       <h2 className={about.AboutBrandStory}>HutenGroup History</h2>
 
       <div className={hutenCss.imageContainer} ref={containerRef}>
@@ -59,7 +59,7 @@ function History() {
         ))}
       </div>
       <div style={{ marginTop: '10em' }}></div>
-      <h3 className={about.AboutTitle}></h3>
+      <h3 className={about.AboutTitle}>&nbsp;</h3>
       <h2 className={about.AboutBrandStory}>Business location</h2>
       <img
         src="../assets/images/huten/hutenMap.png"
