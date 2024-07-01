@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from '../../css/main.module.css';
+import about from '../../css/about.module.css';
 
 const notices = [
   {
@@ -164,19 +166,19 @@ const notices = [
 function Notices() {
   return (
     <div className="container mt-5">
-      <div className="main"></div>
+      <div className={about.main}></div>
       <div>
-        <h3 className="AboutTitle">This is a notice for the customer.</h3>
-        <h2 className="AboutBrandStory">공지사항</h2>
-        <div className="bordlist">
+        <h3 className={about.AboutTitle}>This is a notice for the customer.</h3>
+        <h2 className={about.AboutBrandStory}>공지사항</h2>
+        <div className={styles.bordlist}>
           <ul>
             {notices.map((notice) => (
-              <li key={notice.id} className="bordTitle">
+              <li key={notice.id} className={styles.bordTitle}>
                 <Link to={`/notices/${notice.id}`} state={{ notice }}>
-                  <span className="news">새소식</span>
+                  <span className={styles.news}>새소식</span>
                   <br />
-                  <span className="bordDay">{notice.day}</span>
-                  <span className="bordName">{notice.title}</span>
+                  <span className={styles.bordDay}>{notice.day}</span>
+                  <span className={styles.bordName}>{notice.title}</span>
                 </Link>
               </li>
             ))}

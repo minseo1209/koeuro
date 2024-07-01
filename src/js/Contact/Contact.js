@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from '../../css/main.module.css';
+import about from '../../css/about.module.css';
 
 const contact = [
   {
@@ -112,21 +114,21 @@ const contact = [
 function Contact() {
   return (
     <div className="container mt-5">
+      <div className={about.main}></div>
       <div className="main"></div>
-      <div className="main"></div>
-      <h3 className="AboutTitle">
+      <h3 className={about.AboutTitle}>
         코유로에서 지금 채용 중인 포지션을 확인해보세요.
       </h3>
-      <h2 className="AboutBrandStory">채용중인 공고</h2>
-      <div className="bordlist">
+      <h2 className={about.AboutBrandStory}>채용중인 공고</h2>
+      <div className={styles.bordlist}>
         <ul>
           {contact.map((contact) => (
-            <li key={contact.id} className="bordTitle">
+            <li key={contact.id} className={styles.bordTitle}>
               <Link to={`/contact/${contact.id}`} state={{ contact }}>
-                <span className="news">{contact.state}</span>
+                <span className={styles.news}>{contact.state}</span>
                 <br />
-                <span className="bordDay">{contact.day}</span>
-                <span className="bordName">{contact.title}</span>
+                <span className={styles.bordDay}>{contact.day}</span>
+                <span className={styles.bordName}>{contact.title}</span>
               </Link>
             </li>
           ))}
