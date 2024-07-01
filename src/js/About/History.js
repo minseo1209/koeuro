@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import hutenCss from '../../css/huten.module.css';
+import about from '../../css/about.module.css';
 
 function History() {
   const hutenImg = [
@@ -55,8 +56,9 @@ function History() {
           />
         ))}
       </div>
-
-      <h2 className="AboutBrandStory"> Business location</h2>
+      <div style={{ marginTop: '10em' }}></div>
+      <h3 className={about.AboutTitle}></h3>
+      <h2 className={about.AboutBrandStory}>Business location</h2>
       <img
         src="../assets/images/huten/hutenMap.png"
         className={hutenCss.hutenMap}
