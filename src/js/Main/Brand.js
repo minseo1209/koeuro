@@ -86,6 +86,7 @@ function Brand() {
                 key={index}
                 href={brand.link}
                 target="_blank"
+                rel="noreferrer"
                 // className={brandStyles.brandLink}
                 onMouseEnter={() => setHoveredBrand(index)}
                 onMouseLeave={() => setHoveredBrand(null)}

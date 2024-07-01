@@ -69,17 +69,17 @@ function Customer() {
                     style={{ margin: '0', padding: '0', fontSize: '11px' }}
                   >
                     <li className={styles.liList}>
-                      <a href={brand.href1} target="_blank">
+                      <a href={brand.href1} target="_blank" rel="noreferrer">
                         {brand.link1}
                       </a>
                     </li>
                     <li className={styles.liList}>
-                      <a href={brand.href2} target="_blank">
+                      <a href={brand.href2} target="_blank" rel="noreferrer">
                         {brand.link2}
                       </a>
                     </li>
                     <li className={styles.liList}>
-                      <a href={brand.href3} target="_blank">
+                      <a href={brand.href3} target="_blank" rel="noreferrer">
                         {brand.link3}
                       </a>
                     </li>
