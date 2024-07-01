@@ -68,6 +68,7 @@ function Brand() {
                 alt="유럽의 명품"
               />
               <img
+                alt="koeuroLink"
                 src="../assets/images/logo/KoeuroLink.png"
                 className={`${brandStyles.koeuroLink} ${
                   isVisible ? aniStyles.rotationFromBottom : ''

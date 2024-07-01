@@ -214,6 +214,7 @@ function Main() {
                     <img
                       src="../assets/images/icon/free-icon-facebook-3128208.png"
                       className={styles.footerImg}
+                      alt="facebook"
                     />
                   </button>
                 </span>
@@ -227,6 +228,7 @@ function Main() {
                     <img
                       src="../assets/images/icon/free-icon-instagram-717392.png"
                       className={styles.footerImg}
+                      alt="instargram"
                     />
                   </button>
                 </span>
@@ -238,6 +240,7 @@ function Main() {
                     <img
                       src="../assets/images/icon/free-icon-youtube-152810.png"
                       className={styles.footerImg}
+                      alt="youtube"
                     />
                   </button>
                 </span>

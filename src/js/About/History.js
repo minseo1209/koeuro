@@ -64,6 +64,7 @@ function History() {
       <img
         src="../assets/images/huten/hutenMap.png"
         className={hutenCss.hutenMap}
+        alt="huten"
       />
     </div>
   );

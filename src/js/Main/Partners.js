@@ -169,6 +169,7 @@ function Partners() {
         <img
           src="../assets/images/backgrounds/line_bg4.png"
           className={styles.partnersImg}
+          alt="line"
         />
         <Partner {...partners[currentPartnerIndex]} />
       </div>
@@ -191,6 +192,7 @@ function Partners() {
             <img
               src="../assets/images/icon/free-icon-facebook-3128208.png"
               className={styles.socialIcon}
+              alt="facebook"
             />
             <div className={styles.socialTitle}>Facebook</div>
             <span className={styles.socialSubTitle}>
@@ -203,6 +205,7 @@ function Partners() {
             <img
               src="../assets/images/icon/free-icon-instagram-717392.png"
               className={styles.socialIcon}
+              alt="instargram"
             />
             <div className={styles.socialTitle}>instargram</div>
             <span className={styles.socialSubTitle}>
@@ -215,6 +218,7 @@ function Partners() {
             <img
               src="../assets/images/icon/free-icon-youtube-152810.png"
               className={styles.socialIcon}
+              alt="youtube"
             />
             <div className={styles.socialTitle}>Youtube</div>
             <span className={styles.socialSubTitle}>
@@ -229,6 +233,7 @@ function Partners() {
         <img
           src="../assets/images/backgrounds/line_bg5.png"
           className={styles.helpImg}
+          alt="line"
         />
         <div class="row">
           <div class="col">
