@@ -4,6 +4,7 @@ import about from '../../css/about.module.css';
 
 function OurValue() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isImageVisible, setIsImageVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +14,7 @@ function OurValue() {
 
       if (positionFromTop - windowHeight <= 0) {
         setIsVisible(true);
+        setIsImageVisible(true);
         window.removeEventListener('scroll', handleScroll);
       }
     };
@@ -39,7 +41,9 @@ function OurValue() {
             <img
               src="/assets/images/backgrounds/huten.png"
               alt="img"
-              className={styles.thinkingImg}
+              className={`${styles.thinkingImg} ${
+                isImageVisible ? styles.thinkingImgVisible : ''
+              }`}
             />
           </div>
           <div className="container-fluid col-padding-0 pb-40">
