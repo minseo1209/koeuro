@@ -41,8 +41,8 @@ function OurValue() {
             <img
               src="/assets/images/backgrounds/huten.png"
               alt="img"
-              className={`${styles.thinkingImg} ${
-                isImageVisible ? styles.thinkingImgVisible : ''
+              className={`${styles.brandthinkingImg} ${
+                isImageVisible ? styles.brandthinkingImgVisible : ''
               }`}
             />
           </div>

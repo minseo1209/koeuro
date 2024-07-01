@@ -233,20 +233,24 @@ ul {
   z-index: -1;
   overflow: hidden;
 }
-
+.brandthinkingImg {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(100px);
+  opacity: 0;
+}
 .thinkingImg {
   width: 100%;
   height: auto;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  transform: translateY(
-    100px
-  ); /* 초기 위치를 아래로 설정하여 보이지 않게 합니다. */
-  opacity: 0; /* 초기 상태에서 보이지 않게 합니다. */
+  transform: translateY(100px);
+  opacity: 1;
 }
 
-.thinkingImgVisible {
-  transform: translateY(0); /* 스크롤 시 원래 위치로 이동합니다. */
-  opacity: 1; /* 스크롤 시 보이게 합니다. */
+.brandthinkingImgVisible {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .whiteBox {
