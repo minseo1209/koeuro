@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams, useLocation } from 'react-router-dom';
 
 function NoticeDetail() {
-  const { id } = useParams();
   const location = useLocation();
   const notice = location.state.notice;
 

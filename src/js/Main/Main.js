@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Nav } from 'react-bootstrap';
-import ReactDOM from 'react-dom';
 
 import styles from '../../css/main.module.css';
 import videoStyles from '../../css/video.module.css';
 
 import Brand from '../Main/Brand.js';
 import Koeuro from '../Main/Koeuro.js';
-import Customer from '../Main/Customer.js';
+
 import DevelopingComponent from '../Main/DevelopingComponent.js';
 import Partners from '../Main/Partners.js';
 

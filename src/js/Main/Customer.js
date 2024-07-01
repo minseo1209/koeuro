@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 import styles from '../../css/main.module.css';
 import brandStyles from '../../css/brands.module.css';
 
