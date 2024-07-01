@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import '../../css/about.module.css';
+import about from '../../css/about.module.css';
 
 function BrandShop() {
   const brands = [
@@ -37,20 +37,22 @@ function BrandShop() {
         entries.forEach((entry) => {
           if (
             entry.isIntersecting &&
-            !entry.target.classList.contains('slide-start')
+            !entry.target.classList.contains(about.slideStart)
           ) {
-            entry.target.classList.add('slide-start');
+            entry.target.classList.add(about.slideStart);
           }
         });
       },
       {
-        threshold: 0.5,
+        threshold: 0.1, // 임계값을 낮추어 요소가 더 빨리 인식되도록 합니다.
       }
     );
 
     const brandsContainerElement = brandsContainerRef.current;
     if (brandsContainerElement) {
-      const brandCards = brandsContainerElement.querySelectorAll('.brand-card');
+      const brandCards = brandsContainerElement.querySelectorAll(
+        `.${about.brandCard}`
+      );
       brandCards.forEach((card) => {
         observer.observe(card);
       });
@@ -58,8 +60,9 @@ function BrandShop() {
 
     return () => {
       if (brandsContainerElement) {
-        const brandCards =
-          brandsContainerElement.querySelectorAll('.brand-card');
+        const brandCards = brandsContainerElement.querySelectorAll(
+          `.${about.brandCard}`
+        );
         brandCards.forEach((card) => {
           observer.unobserve(card);
         });
@@ -73,11 +76,14 @@ function BrandShop() {
       ref={brandsContainerRef}
       style={{ marginRight: '0%' }}
     >
-      <div className="brands-grid" style={{ display: 'flex' }}>
+      <div className={about.brandsgrid} style={{ display: 'flex' }}>
         {brands.map((brand, index) => (
-          <div className="brand-card" key={index} id="brand-card">
-            <div className="brand-card-content" style={{ textAlign: 'center' }}>
-              <img src={brand.img} alt={brand.name} className="img_box" />
+          <div className={about.brandCard} key={index}>
+            <div
+              className={about.brandCardContent}
+              style={{ textAlign: 'center' }}
+            >
+              <img src={brand.img} alt={brand.name} className={about.imgBox} />
               <br />
               <h2 className="brand-name" style={{ textAlign: 'center' }}>
                 {brand.name}

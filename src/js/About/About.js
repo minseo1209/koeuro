@@ -3,7 +3,7 @@ import BrandShop from './BrandShop';
 import OurValue from './OurValue';
 import HutenHistroy from './History';
 import Vision from './Vision';
-import '../../css/about.module.css';
+import about from '../../css/about.module.css';
 
 function About() {
   const brandStoryRef = useRef(null);
@@ -48,9 +48,9 @@ function About() {
           />
         </div>
         <div className="col">
-          <div className="BrandStory" ref={brandStoryRef}>
-            <h2 className="BrandStorytext">Brand Story</h2>
-            <div className="BrandStorydetail">
+          <div className={about.BrandStor} y ref={brandStoryRef}>
+            <h2 className={about.BrandStorytext}>Brand Story</h2>
+            <div className={about.BrandStorydetail}>
               <p>
                 한국과 유럽의 줄임 합성어로 한국과 유럽을 연결 한다는
                 의미입니다.
@@ -85,7 +85,7 @@ function About() {
                       autoPlay
                       loop
                       playsInline
-                      className="video-banner-left pr-5"
+                      className={about.videoBannerLeft}
                       width={'100%'}
                       height={'auto'}
                     >
@@ -102,7 +102,7 @@ function About() {
                       autoPlay
                       loop
                       playsInline
-                      className="video-banner-right pr-5"
+                      className={about.videoBannerRight}
                       width={'100%'}
                       height={'auto'}
                     >
@@ -118,10 +118,10 @@ function About() {
           </div>
         </div>
       </div>
-      <h3 className="AboutTitle"></h3>
-      <h2 className="AboutBrandStory">
+      <h3 className={about.AboutTitle}></h3>
+      <h2 className={about.AboutBrandStory}>
         Our Mission
-        <span className="koeuromallLink">
+        <span className={about.koeuromallLink}>
           <a href="https://koeuro.shop/">브랜드쇼핑몰 바로가기 &gt; </a>
         </span>
       </h2>
@@ -135,7 +135,7 @@ function About() {
       </div>
       <BrandShop />
       <OurValue />
-      <div className="box"></div>
+      <div className={about.box}></div>
       <Vision />
       <HutenHistroy />
     </div>
