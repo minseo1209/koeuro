@@ -37,7 +37,9 @@ function History() {
 
   return (
     <div>
-      <h2 className="AboutBrandStory">HutenGroup History</h2>
+      <h3 className={about.AboutTitle}></h3>
+      <h2 className={about.AboutBrandStory}>HutenGroup History</h2>
+
       <div className={hutenCss.imageContainer} ref={containerRef}>
         {leftImages.map((hutenImg, index) => (
           <img
