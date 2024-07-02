@@ -4,6 +4,21 @@
   height: 90vh;
   overflow: hidden;
 }
+.videoElement {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out; /* Transition for fade effect */
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
 
 .videoSection > .bannerWave {
   width: 100%;

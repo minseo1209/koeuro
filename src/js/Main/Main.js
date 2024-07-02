@@ -35,12 +35,17 @@ function Main() {
   const [currentVideoSubText, setCurrentVideoSubText] = useState(
     videoSubTexts[0]
   );
+  const [fadeClass, setFadeClass] = useState(videoStyles.fadeIn);
 
   // 비디오 전환을 위한 함수
   const changeVideo = (nextIndex) => {
-    setCurrentVideoIndex(nextIndex);
-    setCurrentVideoText(videoTexts[nextIndex]);
-    setCurrentVideoSubText(videoSubTexts[nextIndex]);
+    setFadeClass(videoStyles.fadeOut);
+    setTimeout(() => {
+      setCurrentVideoIndex(nextIndex);
+      setCurrentVideoText(videoTexts[nextIndex]);
+      setCurrentVideoSubText(videoSubTexts[nextIndex]);
+      setFadeClass(videoStyles.fadeIn);
+    }, 500);
   };
 
   useEffect(() => {
@@ -53,7 +58,7 @@ function Main() {
     }, 4500);
 
     return () => clearInterval(interval);
-  }, [currentVideoIndex, videoTexts]);
+  }, [currentVideoIndex, videos.length, videoTexts]);
 
   // 이전 비디오로 전환
   const prevVideo = () => {
@@ -72,6 +77,7 @@ function Main() {
     }
     changeVideo(nextIndex);
   };
+
   const goToUrl = (url) => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
@@ -88,16 +94,15 @@ function Main() {
                 muted
                 loop
                 preload="auto"
-                // id="video-background"
-                className={videoStyles.videoElement}
+                className={`${videoStyles.videoElement} ${fadeClass}`}
                 src={videos[currentVideoIndex]}
-                key={videos[currentVideoIndex]} // 비디오 변경 시 새로운 키를 생성하여 리렌더링되도록 함
               />
               <div className={videoStyles.videoContent}>
                 <h1 className={styles.title}>{currentVideoText}</h1>
                 <h4 className={styles.subtitle}>{currentVideoSubText}</h4>
               </div>
             </div>
+
             <div className={videoStyles.bannerWave}>
               <div className={videoStyles.waveOpacity}>
                 <svg
