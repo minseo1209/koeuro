@@ -44,9 +44,11 @@ function NoticeDetail() {
               <div
                 key={index}
                 style={{
-                  width: '100%',
+                  width: '80%',
+                  marginLeft: '10%',
+                  textAlign: 'center',
                   height: '400px',
-                  margin: '20px 0',
+
                   overflow: 'hidden',
                 }}
                 dangerouslySetInnerHTML={{ __html: item.value }}
