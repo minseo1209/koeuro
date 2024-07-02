@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import about from '../../css/about.module.css';
 
 function NoticeDetail() {
   const location = useLocation();
@@ -11,8 +12,8 @@ function NoticeDetail() {
 
   return (
     <div className="container mt-5">
-      <div className="main"></div>
-      <h2 className="AboutBrandStory" style={{ marginBottom: '1em' }}>
+      <div className={about.main}></div>
+      <h2 className={about.AboutBrandStory} style={{ marginBottom: '1em' }}>
         {notice.title}
       </h2>
       <div>
