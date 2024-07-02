@@ -26,8 +26,8 @@ ul {
 .bordTitle {
   font-size: 20px;
   padding-left: 5em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   border-bottom: 1px solid gray;
   text-align: left;
 }

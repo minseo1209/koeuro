@@ -1,12 +1,13 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import styles from '../../css/main.module.css';
 
 const ContactDetail = () => {
   const location = useLocation();
   const { contact } = location.state;
 
   return (
-    <div className="container mt-5">
+    <div className={`${styles['mt-5']}`}>
       <h2>{contact.title}</h2>
       <table>
         <tbody>

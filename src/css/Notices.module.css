@@ -1,0 +1,32 @@
+.subtitle {
+  text-align: left;
+  margin-top: 15px;
+  padding-left: 10%;
+}
+.AboutBrandStory {
+  position: relative;
+  text-align: left;
+  margin-top: 25px;
+  padding-left: 10%;
+  font-weight: 700;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.AboutBrandStory::before,
+.AboutBrandStory::after {
+  content: '';
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background-color: #000;
+}
+
+.AboutBrandStory::before {
+  top: 0;
+}
+
+.AboutBrandStory::after {
+  bottom: 0;
+}

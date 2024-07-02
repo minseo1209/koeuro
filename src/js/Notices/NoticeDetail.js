@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import about from '../../css/about.module.css';
+import styles from '../../css/main.module.css';
+import NoticesCss from '../../css/Notices.module.css';
 
 function NoticeDetail() {
   const location = useLocation();
@@ -11,15 +13,22 @@ function NoticeDetail() {
   }
 
   return (
-    <div className="container mt-5">
-      <div className={about.main}></div>
-      <h2 className={about.AboutBrandStory} style={{ marginBottom: '1em' }}>
+    <div className={`${styles['mt-5']}`}>
+      <div className={about.main}>&nbsp;</div>
+      <h2
+        className={NoticesCss.AboutBrandStory}
+        style={{ marginBottom: '1em' }}
+      >
         {notice.title}
       </h2>
       <div>
         {notice.content.map((item, index) => {
           if (item.type === 'text') {
-            return <p key={index}>{item.value}</p>;
+            return (
+              <p className={NoticesCss.subtitle} key={index}>
+                {item.value}
+              </p>
+            );
           } else if (item.type === 'image') {
             return (
               <div key={index}>
