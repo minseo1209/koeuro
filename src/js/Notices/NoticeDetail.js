@@ -48,7 +48,6 @@ function NoticeDetail() {
                   marginLeft: '10%',
                   textAlign: 'center',
                   height: '400px',
-
                   overflow: 'hidden',
                 }}
                 dangerouslySetInnerHTML={{ __html: item.value }}
